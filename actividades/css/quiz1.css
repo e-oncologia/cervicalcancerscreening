@@ -1,0 +1,193 @@
+
+
+.button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.title,
+.subtitle {
+
+}
+
+.animated {
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+
+.contenedor {
+
+
+  /* mocking native UI */
+  cursor: default !important;
+  /* remove text selection cursor */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* remove text selection */
+  user-drag: none;
+  /* disbale element dragging */
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.questionBox {
+  max-width: 30rem;
+  width: 30rem;
+  min-height: 30rem;
+  background: #fafafa;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.questionBox header {
+  padding: 1.5rem;
+  text-align: center;
+}
+.questionBox header h1 {
+  font-weight: bold;
+  margin-bottom: 1rem !important;
+}
+.questionBox header .progresscontenedor {
+  width: 60%;
+  margin: 0 auto;
+}
+.questionBox header .progresscontenedor > progress {
+  margin: 0;
+  border-radius: 4em;
+  overflow: hidden;
+  border: none;
+  color: #ff7b6f;
+}
+.questionBox header .progresscontenedor > progress::-moz-progress-bar {
+  background: #ff7b6f;
+}
+.questionBox header .progresscontenedor > progress::-webkit-progress-value {
+  background: #ff7b6f;
+}
+.questionBox header .progresscontenedor > p {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.questionBox .titlecontenedor {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.questionBox .quizForm {
+  display: block;
+  white-space: normal;
+  height: 100%;
+  width: 100%;
+}
+.questionBox .quizForm .quizFormcontenedor {
+  height: 100%;
+  margin: 15px 18px;
+}
+.questionBox .quizForm .quizFormcontenedor .field-label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.questionBox .quizCompleted {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+.questionBox .quizCompleted > .icon {
+  color: #b6b6b6;
+  font-size: 5rem;
+}
+.questionBox .quizCompleted > .icon .is-active {
+  color: #000033;
+}
+.questionBox .questioncontenedor {
+  white-space: normal;
+  height: 100%;
+  width: 100%;
+}
+.questionBox .questioncontenedor .optioncontenedor {
+  margin-top: 12px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+.questionBox .questioncontenedor .optioncontenedor .option {
+  padding: 9px 18px;
+  margin: 0 18px;
+  margin-bottom: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.85);
+  border: transparent 1px solid;
+}
+.questionBox .questioncontenedor .optioncontenedor .option.is-selected {
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+.questionBox .questioncontenedor .optioncontenedor .option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.questionBox .questioncontenedor .optioncontenedor .option:active {
+  -webkit-transform: scaleX(0.9);
+  transform: scaleX(0.9);
+}
+.questionBox .questioncontenedor .questionFooter {
+  background: rgba(0, 0, 0, 0.025);
+  width: 100%;
+  align-self: flex-end;
+}
+.questionBox .questioncontenedor .questionFooter .pagination {
+  margin: 15px 25px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  background: #ffffff;
+}
+.button.is-active {
+  background: #ff7b6f;
+}
+
+
+@media screen and (min-width: 769px) {
+  .questionBox {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .questionBox .questioncontenedor {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: auto !important;
+    border-radius: 6px 6px 0px 0px;
+  }
+}
