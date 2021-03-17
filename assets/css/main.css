@@ -203,7 +203,9 @@ body.is-preload *:after {
 body {
   color: rgba(67, 75, 86, 0.75);
 }
-
+::selection {
+  background: #ffd000;
+}
 body,
 input,
 select,
@@ -326,14 +328,59 @@ h6 {
 .salmon {
   color: #ff7b6f;
 }
+.bgsalmon {
+  background-color: rgb(255, 123, 111);
+}
+.bgsalmonclaro {
+  background-color: rgb(255, 123, 111, 0.5);
+}
 .verde {
   color: #8fe284;
 }
+.bgverde {
+  background-color: rgb(142, 226, 131);
+}
+.bgverdeclaro {
+  background-color: rgb(142, 226, 131, 0.5);
+}
+.rojo {
+  color: rgba(255, 0, 85);
+}
+.bgrojo {
+  background-color: rgba(255, 0, 85);
+}
+.bgrojoclaro {
+  background-color: rgba(255, 0, 85, 0.5);
+}
+.amarillo {
+  color: #ffd000;
+}
+.bgamarillo {
+  background-color: #ffd000;
+}
+.bgamarilloclaro {
+  background-color: rgb(255, 208, 0, 0.5);
+}
+.azul {
+  color: #000033;
+}
+
 .gordi {
   font-weight: 700;
 }
 .gris {
   opacity: 0.5;
+}
+
+.figuras {
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
 }
 @media screen and (max-width: 736px) {
   h1 {
@@ -1907,7 +1954,7 @@ hr {
 /* Box */
 
 .box {
-  border-radius: 4px;
+  border-radius: 0px;
   border: solid 1px;
   margin-bottom: 2em;
   padding: 1.5em;
@@ -2716,24 +2763,23 @@ ol li {
 
 ul {
   list-style: disc;
-  margin: 0 0 2em 0;
+  margin: 0 0 0 0;
   padding-left: 1em;
 }
 
 ul li {
   padding-left: 0.5em;
 }
-
 ul.alt {
   list-style: none;
   padding-left: 0;
 }
-
+ol.alt li,
 ul.alt li {
   border-top: solid 1px;
   padding: 0.5em 0;
 }
-
+ol.alt li:first-child,
 ul.alt li:first-child {
   border-top: 0;
   padding-top: 0;
@@ -2752,7 +2798,7 @@ dl dt {
 dl dd {
   margin-left: 2em;
 }
-
+ol.alt li,
 ul.alt li {
   border-top-color: rgba(67, 75, 86, 0.25);
 }
@@ -2958,7 +3004,6 @@ table td {
 }
 
 table th {
-  font-size: 0.9em;
   font-weight: 500;
   padding: 0 0.75em 0.75em 0.75em;
   text-align: left;

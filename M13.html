@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html class="no-js">
   <head>
     <title>BCNscreening</title>
     <meta charset="utf-8" />
@@ -9,6 +8,20 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- 
+
+	<link rel="stylesheet" href="actividades/css/icomoon.css">
+	<link rel="stylesheet" href="actividades/css/bootstrap.css">
+	<link rel="stylesheet" href="actividades/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="actividades/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="actividades/css/style.css">
+<link rel="stylesheet" href="actividades/css/grafico1A.css" />
+		<link rel="stylesheet" href="actividades/css/arrastre1.css">
+ -->
+    <link rel="stylesheet" href="actividades/css/animate.css" />
+    <link rel="stylesheet" href="actividades/css/quiz1.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
   </head>
   <body class="is-preload">
     <!-- Page Wrapper -->
@@ -40,7 +53,7 @@
             </ul>
             <h4>RESOURCES</h4>
             <ul class="links">
-              <li><a href="M1glossary.html">&nbspGlossary</a></li>
+              <li><a href="M1summary.html">&nbspSummary</a></li>
               <li><a href="M1biblio.html">&nbspBibliography</a></li>
               <li>
                 <a href="docs/PDFsample.pdf" target="_blank"
@@ -57,59 +70,272 @@
           <!-- Main -->
           <section class="main">
             <header class="major">
-              <h1 class="gris">TEST PARAMETERS AND REQUIREMENTS</h1>
+              <h1 class="gris">OVERALL PROGRAM CHARACTERISTICS</h1>
             </header>
 
             <img class="image main" src="images/pic11.jpg" alt="" />
 
             <p>
-              The natural history of the disease is the progression of a disease
-              over time and understanding how it evolves is fundamental to learn
-              what can we do to avoid its progression.
+              Screening is a complex public health strategy and has several
+              requirements to be fulfilled to be effective. Screening should be
+              undertaken only after efficacy and, ideally, effectiveness have
+              been evaluated and established; when resources are available and
+              sufficient to cover a large proportion of the intended target
+              group, when it is possible to set the required follow-up of
+              screen-positive subjects to confirm disease and guaranty treatment
+              options for those who are ill; and when the disease is important
+              enough from a public health perspective to justify the effort and
+              costs of screening.
             </p>
             <p>
-              Many diseases have certain relatively well-defined and well-known
-              stages in which different types of preventive measures can be
-              applied.
-            </p>
-
-            <hr />
-
-            <h2>The disease process</h2>
-            <p>
-              The disease process begins with the exposure to risk and
-              etiological factors in a susceptible host (1). At this stage,
-              primary prevention (2) focuses on protecting healthy individuals
-              from the biological onset of disease by means of health promotion
-              and health protection interventions. Therefore, primary prevention
-              strategies aim to reduce the incidence of disease by eliminating
-              exposure to risk factors or by increasing population resistance to
-              risk factors. In cervical cancer the main primary prevention
-              action is avoiding exposure to oncogenic HPV types, the necessary
-              cause of cervical cancer, through vaccination.
-            </p>
-
-            <hr />
-
-            <h2>Screening</h2>
-            <p>
-              In some individuals, the disease process is triggered, and
-              pathological changes start, normally without the individuals being
-              aware of them (asymptomatic). This is known as the subclinical
-              stage of the disease or the latency period.
+              According to their characteristics, cancer screening programmes
+              can be organized or opportunistic:
             </p>
             <p>
-              At this stage, secondary prevention or screening (2) consists of
-              the systematic application of safe, easy-to-use and economically
-              affordable tests, to provide early diagnosis of disease followed
-              by timely treatment.
+              An
+              <span class="bgamarillo">organized screening programme</span> is a
+              population-based programme designed by a central public health
+              structure (national or regional) to reach the highest possible
+              coverage of women. All women in the target age group are invited
+              to participate. Organized programmes comprise systematic testing
+              with a standardized and quality assured test, a call and recall
+              system of a well-defined target population, delivery of test
+              results as well as additional investigations, and treatment and
+              follow-up care if necessary. IARC defines an organized screening
+              programme as one that has “an explicit policy with specified age
+              categories, method, and interval for screening; a defined target
+              population; a management team responsible for implementation; a
+              health-care team for decisions and care; a quality assurance
+              structure; and a method for identifying cancer occurrence in the
+              target population” (14).
             </p>
             <p>
-              In cervical cancer, it can take decades for an HPV infection to
-              progress to cancer. Therefore, secondary prevention consists of
-              the detection of precancerous lesions caused by persistent
-              infection of HPV using cytology or HPV testing.
+              An
+              <span class="bgamarillo"
+                >opportunistic or spontaneous screening</span
+              >
+              is done independently of an organized programme. In this case,
+              women are invited to participate when visiting health services for
+              their convenience. Screening may be recommended by a provider
+              during a consultation or requested by a woman and it is based on
+              the patient-practitioner relationship.
             </p>
+            <p>
+              Organized screening is considered to be more efficient than
+              opportunistic screening, given that it implies a better use of
+              available resources and it benefits a greater number of people
+              (15–17). Organized screening is focused on obtaining higher
+              coverage and the quality of the process itself, providing higher
+              benefits against screening harms. The choice of the target age
+              group and the frequency of screening are usually made at the
+              national or regional level. Organized screening programmes
+              minimize inequalities in access to screening by giving every
+              eligible person access to them. Opportunistic screening incurs
+              more frequently in access biases, with low screening coverages in
+              certain population groups (high-risk groups, certain ages, groups
+              with low economic resources) and overuse in other groups. This
+              implies a decrease in the effectiveness of the program and its
+              profitability.
+            </p>
+          </section>
+          <!-- Wrapper -->
+          <div class="wrapper">
+            <div class="inner">
+              <!-- Main -->
+              <section class="main">
+          <!-- Section -->
+          <div class="contenedor">
+            <!--questionBox-->
+            <div class="questionBox" id="app">
+              <!-- transition -->
+              <transition
+              :duration="{ enter: 500, leave: 300 }"
+              enter-active-class="animated"
+              leave-active-class="animated"
+              mode="out-in"
+              >
+              <!--qusetioncontenedor-->
+              <div
+                class="questioncontenedor"
+                v-if="questionIndex<quiz.questions.length"
+                v-bind:key="questionIndex"
+              >
+                <header>
+                <h3>Evalúa tus conocimientos</h3>
+                
+                </header>
+          
+                <!-- questionTitle -->
+                <p class="titlecontenedor">
+                {{ quiz.questions[questionIndex].text }}
+                </p>
+          
+                <!-- quizOptions -->
+                <div class="optioncontenedor">
+                <div
+                  class="option"
+                  v-for="(response, index) in quiz.questions[questionIndex].responses"
+                  @click="selectOption(index)"
+                  :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                  :key="index"
+                >
+                  {{ index | charIndex }}. {{ response.text }}
+                </div>
+                </div>
+          
+                <!--quizFooter: navigation and progress-->
+                <footer class="questionFooter">
+                <!--pagination-->
+                <nav class="pagination" role="navigation" aria-label="pagination">
+                  <!-- back button -->
+                  <a
+                  class="button"
+                  v-on:click="prev();"
+                  :disabled="questionIndex < 1"
+                  >
+                  atrás
+                  </a>
+          
+                  <!-- next button -->
+                  <a
+                  class="button"
+                  :class="(userResponses[questionIndex]==null)?'':'is-active'"
+                  v-on:click="next();"
+                  :disabled="questionIndex>=quiz.questions.length"
+                  >
+                  {{ (userResponses[questionIndex]==null)?'saltar':'siguiente' }}
+                  </a>
+                </nav>
+                <!--/pagination-->
+                </footer>
+                <!--/quizFooter-->
+              </div>
+              <!--/questioncontenedor-->
+          
+              <!--quizCompletedResult-->
+              <div
+                v-if="questionIndex >= quiz.questions.length"
+                v-bind:key="questionIndex"
+                class="quizCompleted has-text-centered"
+              >
+                <!-- quizCompletedIcon: Achievement Icon -->
+                <span class="icon">
+                <i
+                  class="fa"
+                  :class="score()>2?'fa-check-circle verde':'fa-times-circle salmon'"
+                ></i>
+                </span>
+          
+                <!--resultTitleBlock-->
+                <h2 class="title">
+                You did {{ (score()>4?'an amazing':(score()<3?'a poor':'a good'))
+                }} job!
+                </h2>
+                <p class="subtitle">
+                Total score: {{ score() }} / {{ quiz.questions.length }}
+                </p>
+                <br />
+                <a class="button" @click="restart()"
+                >restart <i class="fa fa-refresh"></i
+                ></a>
+                <!--/resultTitleBlock-->
+              </div>
+              <!--/quizCompetedResult-->
+              </transition>
+            </div>
+            <!--/questionBox-->
+          </div>
+            <!--/contenedor-->
+            <!-- partial -->
+          </section>
+        
+        
+        <!--  -->
+        <!--  -->
+        </div class="main">
+        </div>
+          <!--   -->
+          <section class="main">
+            <h4>
+              <span class="bgamarillo">&nbsp;SUMMARY TABLE 2&nbsp;</span>
+            </h4>
+            <div class="table-wrapper">
+              <table class="alt">
+                <thead>
+                  <tr>
+                    <th width="50%">Organized screening</th>
+                    <th>Opportunistic screening</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Organized implementation of the diagnostic and early
+                      treatment activities in pre-defined groups of the
+                      population at risk.
+                    </td>
+                    <td>
+                      It is offered only to subjects that voluntarily attend
+                      health services, either with the purpose to get screened
+                      or for consultation reasons other than screening.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      The targeted population is clearly defined (subjects to be
+                      screened are identifiable).
+                    </td>
+                    <td>
+                      Its lack of organization penalizes equity, since subjects
+                      not requiring consultation do not get screened.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      It generally uses a census registry to invite the target
+                      population with recall systems for non-attendees.
+                    </td>
+                    <td>
+                      It creates methodological confusion between screening and
+                      clinical practice, which is hardly efficient and
+                      efficacious.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Only offers validated screening techniques and has its own
+                      referral, treatment and follow-up algorithms of detected
+                      cases.
+                    </td>
+                    <td>
+                      Tends to unnecessarily repeat the screening test and
+                      sufficient levels of coverage are difficult to reach.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      The programme evaluation and monitoring are defined and
+                      planned, so incidence and mortality rates can be
+                      calculated separately for screening program participants
+                      and non-participants at the total targeted population
+                      level.
+                    </td>
+                    <td>
+                      Is potentially more expensive than any population-based
+                      screening design and the results of its implementation are
+                      difficult to assess.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Furthermore, it establishes quality control of these
+                      epidemiological data.
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </div>
       </div>
@@ -119,9 +345,10 @@
           <!-- Main -->
           <section class="main accent4">
             <header class="major">
+              <h3>End of the 1st module</h3>
               <h3>
-                <a href="index.html" class="button primary"
-                  >End of the 1st module
+                <a href="M1summary.html" class="button primary"
+                  >Access to the summary of this module
                 </a>
               </h3>
             </header>
@@ -145,6 +372,28 @@
       </div>
     </div>
 
+    <!-- quizz -->
+
+    <script src="actividades/js/quiz1A.js"></script>
+    <script src="actividades/js/quiz1.js"></script>
+
+    <!--
+    <script src="actividades/js/grafico1B.js"></script>
+    <script src="actividades/js/grafico1A.js"></script>
+    <script src="actividades/js/jquery.min.js"></script>
+    <script src="actividades/js/jquery.easing.1.3.js"></script>
+    <script src="actividades/js/bootstrap.min.js"></script>
+    <script  src="actividades/js/arrastre3.js"></script>
+		<script  src="actividades/js/arrastre2.js"></script>
+		<script  src="actividades/js/arrastre1.js"></script>
+	<script src="actividades/js/owl.carousel.min.js"></script>
+    <script src="actividades/js/jquery.stellar.min.js"></script>
+    <script src="actividades/js/jquery.waypoints.min.js"></script>
+    	<script src="actividades/js/jquery.countTo.js"></script>
+    <script src="actividades/js/main.js"></script>
+    <script src="actividades/js/diagrama2.js"></script>
+    <script src="actividades/js/scriptdiagram.js"></script>
+  -->
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

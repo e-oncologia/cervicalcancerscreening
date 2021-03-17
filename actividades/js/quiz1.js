@@ -11,45 +11,6 @@ var quiz = {
         ],
       },
 
-      {
-        text: "¿Cuál es la respuesta correcta?",
-        responses: [
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
-          { text: "Esta sí es correcta", correct: true },
-          { text: "Esta no es correcta" },
-        ],
-      },
-
-      {
-        text: "¿Cuál es la respuesta correcta?",
-        responses: [
-          { text: "Esta sí es correcta", correct: true },
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
-        ],
-      },
-
-      {
-        text: "¿Cuál es la respuesta correcta?",
-        responses: [
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
-          { text: "Esta sí es correcta", correct: true },
-          { text: "Esta no es correcta" },
-        ],
-      },
-
-      {
-        text: "¿Cuál es la respuesta correcta?",
-        responses: [
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
-          { text: "Esta sí es correcta", correct: true },
-        ],
-      },
     ],
   },
   userResponseSkelaton = Array(quiz.questions.length).fill(null);
