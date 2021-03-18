@@ -138,122 +138,147 @@
               profitability.
             </p>
           </section>
-          <!-- Wrapper -->
-          <div class="wrapper">
-            <div class="inner">
-              <!-- Main -->
-              <section class="main">
-          <!-- Section -->
-          <div class="contenedor">
-            <!--questionBox-->
-            <div class="questionBox" id="app">
-              <!-- transition -->
-              <transition
-              :duration="{ enter: 500, leave: 300 }"
-              enter-active-class="animated"
-              leave-active-class="animated"
-              mode="out-in"
-              >
-              <!--qusetioncontenedor-->
+         <!-- Section -->
+         <!-- QUIZ 5-->
+         <div class="wrapper">
+          <div class="inner">
+            <!-- Main -->
+            <section class="main">
+        <!-- Section -->
+        <div class="contenedor">
+          <!--questionBox-->
+          <div class="questionBox" id="appE">
+            <!-- transition -->
+		  <transition
+			:duration="{ enter: 500, leave: 300 }"
+			enter-active-class="animated zoomIn"
+			leave-active-class="animated zoomOut"
+			mode="out-in"
+		  >
+           <!-- transition -->
+		  <transition
+			:duration="{ enter: 500, leave: 300 }"
+			enter-active-class="animated zoomIn"
+			leave-active-class="animated zoomOut"
+			mode="out-in"
+		  >
+			<!--qusetioncontenedor-->
+			<div
+			  class="questioncontenedor"
+			  v-if="questionIndex<quizE.questions.length"
+			  v-bind:key="questionIndex"
+			>
+			  <header>
+      
+            
+            <h2>Quiz 5</h2>
+          <span class="icon solid fa-question major accent4"></span>
+      
+        
+				<!--progress-->
+				<div class="progresscontenedor">
+				  <progress
+					class="progress is-info is-small"
+					:value="(questionIndex/quizE.questions.length)*100"
+					max="100"
+				  >
+					{{(questionIndex/quizE.questions.length)*100}}%
+				  </progress>
+				  <p>{{(questionIndex/quizE.questions.length)*100}}% completed</p>
+				</div>
+				<!--/progress-->
+			  </header>
+  
+			  <!-- questionTitle -->
+			  <p class="titlecontenedor title">
+				<i>"{{ quizE.questions[questionIndex].text }}"</i>
+        </p>
+        <p class="titlecontenedor title">Which of the following types of screening corresponds to the above definition?</p>
+        
+              <!-- quizEOptions -->
+              <div class="optioncontenedor">
               <div
-                class="questioncontenedor"
-                v-if="questionIndex<quiz.questions.length"
-                v-bind:key="questionIndex"
+                class="option"
+                v-for="(response, index) in quizE.questions[questionIndex].responses"
+                @click="selectOption(index)"
+                :class="{'is-selected': userResponses[questionIndex] == index}"
+                :key="index"
               >
-                <header>
-                <h3>Evalúa tus conocimientos</h3>
-                
-                </header>
-          
-                <!-- questionTitle -->
-                <p class="titlecontenedor">
-                {{ quiz.questions[questionIndex].text }}
-                </p>
-          
-                <!-- quizOptions -->
-                <div class="optioncontenedor">
-                <div
-                  class="option"
-                  v-for="(response, index) in quiz.questions[questionIndex].responses"
-                  @click="selectOption(index)"
-                  :class="{ 'is-selected': userResponses[questionIndex] == index}"
-                  :key="index"
-                >
-                  {{ index | charIndex }}. {{ response.text }}
-                </div>
-                </div>
-          
-                <!--quizFooter: navigation and progress-->
-                <footer class="questionFooter">
-                <!--pagination-->
-                <nav class="pagination" role="navigation" aria-label="pagination">
-                  <!-- back button -->
-                  <a
-                  class="button"
-                  v-on:click="prev();"
-                  :disabled="questionIndex < 1"
-                  >
-                  atrás
-                  </a>
-          
-                  <!-- next button -->
-                  <a
-                  class="button"
-                  :class="(userResponses[questionIndex]==null)?'':'is-active'"
-                  v-on:click="next();"
-                  :disabled="questionIndex>=quiz.questions.length"
-                  >
-                  {{ (userResponses[questionIndex]==null)?'saltar':'siguiente' }}
-                  </a>
-                </nav>
-                <!--/pagination-->
-                </footer>
-                <!--/quizFooter-->
+                {{ index | charIndex }}. {{ response.text }}
               </div>
-              <!--/questioncontenedor-->
-          
-              <!--quizCompletedResult-->
-              <div
-                v-if="questionIndex >= quiz.questions.length"
-                v-bind:key="questionIndex"
-                class="quizCompleted has-text-centered"
-              >
-                <!-- quizCompletedIcon: Achievement Icon -->
-                <span class="icon">
-                <i
-                  class="fa"
-                  :class="score()>2?'fa-check-circle verde':'fa-times-circle salmon'"
-                ></i>
-                </span>
-          
-                <!--resultTitleBlock-->
-                <h2 class="title">
-                You did {{ (score()>4?'an amazing':(score()<3?'a poor':'a good'))
-                }} job!
-                </h2>
-                <p class="subtitle">
-                Total score: {{ score() }} / {{ quiz.questions.length }}
-                </p>
-                <br />
-                <a class="button" @click="restart()"
-                >restart <i class="fa fa-refresh"></i
-                ></a>
-                <!--/resultTitleBlock-->
               </div>
-              <!--/quizCompetedResult-->
-              </transition>
+              
+        
+              <!--quizFooter: navigation and progress-->
+			  <footer class="questionFooter">
+          <!--pagination-->
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            <!-- back button -->
+            <a
+            class="button"
+            v-on:click="prev();"
+            :disabled="questionIndex < 1"
+            >
+            back
+            </a>
+    
+            <!-- next button -->
+            <a
+            class="button"
+            :class="(userResponses[questionIndex]==null)?'':'is-active'"
+            v-on:click="next();"
+            :disabled="questionIndex>=quiz.questions.length"
+            >
+            {{ (userResponses[questionIndex]==null)?'skip':'next' }}
+            </a>
+          </nav>
+          <!--/pagination-->
+          </footer>
+          <!--/quizFooter-->
             </div>
-            <!--/questionBox-->
+            <!--/questioncontenedor-->
+        
+            <!--quizECompletedResult-->
+            <div
+              v-if="questionIndex >= quizE.questions.length"
+              v-bind:key="questionIndex"
+              class="quizECompleted has-text-centered"
+            >
+              <!-- quizECompletedIcon: Achievement Icon -->
+              <span class="icon">
+                <br>
+              <i
+                class="fa"
+                :class="score()<2?'fa-times-circle salmon':'fa-check-circle'"
+              ></i>
+              </span>
+        
+              <!--resultTitleBlock-->
+			  <h2 class="title">
+          You did {{ (score()>4?'an amazing':(score()<2?'a poor':'a good'))
+          }} job!
+          </h2>
+          <p class="subtitle">
+          Total score: {{ score() }} / {{ quizE.questions.length }}
+          </p>
+              <br /><br><br>
+              <a class="button" @click="restart()"
+              >restart <i class="fa fa-refresh"></i
+              ></a><br><br><br><br><br><br>
+              <!--/resultTitleBlock-->
+            </div>
+            <!--/quizECompetedResult-->
+            </transition>
           </div>
-            <!--/contenedor-->
-            <!-- partial -->
-          </section>
-        
-        
-        <!--  -->
-        <!--  -->
-        </div class="main">
+          <!--/questionBox-->
         </div>
+          <!--/contenedor-->
+          <!-- partial -->
+        </section>
+      
+
+      </div class="main">
+      </div>
           <!--   -->
           <section class="main">
             <h4>
@@ -375,7 +400,8 @@
     <!-- quizz -->
 
     <script src="actividades/js/quiz1A.js"></script>
-    <script src="actividades/js/quiz1.js"></script>
+    <script src="actividades/js/quiz1.js"></script>   
+    <script src="actividades/js/quiz5.js"></script>
 
     <!--
     <script src="actividades/js/grafico1B.js"></script>

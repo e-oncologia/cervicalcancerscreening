@@ -2,12 +2,11 @@ var quiz = {
     user: "e-oncología",
     questions: [
       {
-        text: "¿Cuál es la respuesta correcta?",
+        text: "Which test has the highest sensitivity and which one the highest specificity?",
         responses: [
-          { text: "Esta no es correcta" },
-          { text: "Esta sí es correcta", correct: true },
-          { text: "Esta no es correcta" },
-          { text: "Esta no es correcta" },
+          { text: "Cytology" },
+          { text: "HPV test", correct: true },
+     
         ],
       },
 

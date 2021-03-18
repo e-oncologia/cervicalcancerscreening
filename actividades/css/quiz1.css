@@ -70,7 +70,7 @@
   margin-top: 0.5rem;
 }
 .questionBox .titlecontenedor {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -88,16 +88,31 @@
   text-align: left;
   margin-bottom: 0.5rem;
 }
-.questionBox .quizCompleted {
+.questionBox .quizCompleted,
+.questionBox .quizBCompleted,
+.questionBox .quizCCompleted,
+.questionBox .quizDCompleted,
+.questionBox .quizECompleted,
+.questionBox .quizFCompleted {
   width: 100%;
   padding: 1rem;
   text-align: center;
 }
-.questionBox .quizCompleted > .icon {
+.questionBox .quizCompleted > .icon,
+.questionBox .quizBCompleted > .icon,
+.questionBox .quizCCompleted > .icon,
+.questionBox .quizDCompleted > .icon,
+.questionBox .quizECompleted > .icon,
+.questionBox .quizFCompleted > .icon {
   color: #b6b6b6;
   font-size: 5rem;
 }
-.questionBox .quizCompleted > .icon .is-active {
+.questionBox .quizCompleted > .icon .is-active,
+.questionBox .quizBCompleted > .icon .is-active,
+.questionBox .quizCCompleted > .icon .is-active,
+.questionBox .quizDCompleted > .icon .is-active,
+.questionBox .quizECompleted > .icon .is-active,
+.questionBox .quizFCompleted > .icon .is-active {
   color: #000033;
 }
 .questionBox .questioncontenedor {

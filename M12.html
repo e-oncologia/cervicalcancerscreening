@@ -20,7 +20,6 @@
  -->
     <link rel="stylesheet" href="actividades/css/animate.css" />
     <link rel="stylesheet" href="actividades/css/quiz1.css" />
-
     <script src="js/modernizr-2.6.2.min.js"></script>
   </head>
 
@@ -274,7 +273,7 @@
               <span class="figuras">TABLE 1</span>.
             </p>
             <h4>
-              <span class="bgamarillo">&nbsp;TABLE 1&nbsp;</span> Test results
+              <span class="bgamarillo">&nbsp;TABLE 1.&nbsp;</span> Test results
               according to disease status.
             </h4>
             <div class="table-wrapper">
@@ -398,11 +397,195 @@
             </div>
           </section>
           <!-- Section -->
-          <section class="main accent2">
-            <h2>EJERCICIO</h2>
-          </section>
+            <!-- QUIZ 1 -->
+            <div class="wrapper">
+              <div class="inner">
+                <!-- Main -->
+                <section class="main">
+            <!-- Section -->
+            <div class="contenedor">
+              <!--questionBox-->
+              <div class="questionBox" id="app">
+                <!-- transition -->
+                <transition
+                :duration="{ enter: 500, leave: 300 }"
+                enter-active-class="animated"
+                leave-active-class="animated"
+                mode="out-in"
+                >
+                <!--qusetioncontenedor-->
+                <div
+                  class="questioncontenedor"
+                  v-if="questionIndex<quiz.questions.length"
+                  v-bind:key="questionIndex"
+                >
+                <header>
+                  <h2>Quiz 1</h2>
+                  <span class="icon solid fa-question major accent4"></span>
+                  <br>
+                  <br>
+                  <p>According to the information displayed in the following tables, calculate sensitivity and specificity for high-risk HPV testing and conventional cytology to detect histologically proven high-grade lesion.</p>
+                  <div class="table-wrapper">
+                    <table class="alt">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td colspan="2">
+                            <b>Histologically proven high-grade lesion</b>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td><b>Yes</b></td>
+                          <td><b>No</b></td>
+                          <td><b>Total</b></td>
+                        </tr>
+                        <tr>
+                          <td><b>Positive HPV test</b></td>
+                          <td>47</td>
+                          <td>284</td>
+                          <td>331</td>
+                        </tr>
+                        <tr>
+                          <td><b>Negative HPV test</b></td>
+                          <td>0</td>
+                          <td>1950</td>
+                          <td>1950</td>
+                        </tr>
+                        <tr>
+                          <td><b>Total</b></td>
+                          <td>47</td>
+                          <td>2234</td>
+                          <td>2281</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-wrapper">
+                    <table class="alt">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td colspan="2">
+                            <b>Histologically proven high-grade lesion</b>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td><b>Yes</b></td>
+                          <td><b>No</b></td>
+                          <td><b>Total</b></td>
+                        </tr>
+                        <tr>
+                          <td><b>Positive cytology</b></td>
+                          <td>32</td>
+                          <td>104</td>
+                          <td>136</td>
+                        </tr>
+                        <tr>
+                          <td><b>Negative cytology</b></td>
+                          <td>15</td>
+                          <td>2130</td>
+                          <td>2145</td>
+                        </tr>
+                        <tr>
+                          <td><b>Total</b></td>
+                          <td>47</td>
+                          <td>2234</td>
+                          <td>2281</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  </header>
+                  <!-- questionTitle -->
+                  <p class="titlecontenedor title">
+                  {{ quiz.questions[questionIndex].text }}
+                  </p>
+                  <!-- quizOptions -->
+                  <div class="optioncontenedor">
+                  <div
+                    class="option"
+                    v-for="(response, index) in quiz.questions[questionIndex].responses"
+                    @click="selectOption(index)"
+                    :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                    :key="index"
+                  >
+                    {{ index | charIndex }}. {{ response.text }}
+                  </div>
+                  </div>
+                  <!--quizFooter: navigation and progress-->
+                  <footer class="questionFooter">
+                  <!--pagination-->
+                  <nav class="pagination" role="navigation" aria-label="pagination">
+                    <!-- back button -->
+                    <a
+                    class=""
+                    v-on:click="prev();"
+                    :disabled="questionIndex < 1"
+                    >
+                    </a>
+                    <!-- next button -->
+                    <a
+                    class="button"
+                    :class="(userResponses[questionIndex]==null)?'':'is-active'"
+                    v-on:click="next();"
+                    :disabled="questionIndex>=quiz.questions.length"
+                    >
+                    {{ (userResponses[questionIndex]==null)?'':'check' }}
+                    </a>
+                  </nav>
+                  <!--/pagination-->
+                  </footer>
+                  <!--/quizFooter-->
+                </div>
+                <!--/questioncontenedor-->
+            
+                <!--quizCompletedResult-->
+                <div
+                  v-if="questionIndex >= quiz.questions.length"
+                  v-bind:key="questionIndex"
+                  class="quizCompleted has-text-centered"
+                >
+                  <!-- quizCompletedIcon: Achievement Icon -->
+                  <span class="icon">
+                    <br>
+                  <i
+                    class="fa"
+                    :class="score()<1?'fa-times-circle salmon':'fa-check-circle'"
+                  ></i>
+                  </span>
+                  <!--resultTitleBlock-->
+                  <h2 class="title">
+                  {{ score()<1?'INCORRECT':'CORRECT!'
+                  }}
+                  </h2>
+                  <p class="subtitle"><br><br>
+                    <span class="bgamarillo">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
+                  </p>
+                  <p><span class="bgamarillo">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
+                  <br /><br><br>
+                  <a class="button" @click="restart()"
+                  >restart <i class="fa fa-refresh"></i
+                  ></a><br><br><br><br><br><br>
+                  <!--/resultTitleBlock-->
+                </div>
+                <!--/quizCompetedResult-->
+                </transition>
+              </div>
+              <!--/questionBox-->
+            </div>
+              <!--/contenedor-->
+              <!-- partial -->
+            </section>
+          <!--  -->
+          </div class="main">
+          </div>
           <!-- Main -->
           <section class="main">
+            <hr>
             <p>
               A perfect test will classify all women either as TP or TN (100%
               sensitivity and 100% specificity). However, tests rarely classify
@@ -500,9 +683,197 @@
             </ul>
           </section>
           <!-- Section -->
-          <section class="main accent2">
-            <h2>EJERCICIO</h2>
-          </section>
+
+          <!-- QUIZ 2-->
+            <div class="wrapper">
+              <div class="inner">
+                <!-- Main -->
+                <section class="main">
+            <!-- Section -->
+            <div class="contenedor">
+              <!--questionBox-->
+              <div class="questionBox" id="appB">
+                <!-- transition -->
+                <transition
+                :duration="{ enter: 500, leave: 300 }"
+                enter-active-class="animated"
+                leave-active-class="animated"
+                mode="out-in"
+                >
+                <!--qusetioncontenedor-->
+                <div
+                  class="questioncontenedor"
+                  v-if="questionIndex<quizB.questions.length"
+                  v-bind:key="questionIndex"
+                >
+                  <header>
+                    <h2>Quiz 2</h2>
+                  <span class="icon solid fa-question major accent4"></span>
+                  <br>
+                  <br>
+                  <p>According to the information displayed in the following tables, calculate the PPV and the NPV for high-risk HPV testing and conventional cytology.</p>
+                  <div class="table-wrapper">
+                    <table class="alt">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td colspan="2">
+                            <b>Histologically proven high-grade lesion</b>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td><b>Yes</b></td>
+                          <td><b>No</b></td>
+                          <td><b>Total</b></td>
+                        </tr>
+                        <tr>
+                          <td><b>Positive HPV test</b></td>
+                          <td>47</td>
+                          <td>284</td>
+                          <td>331</td>
+                        </tr>
+                        <tr>
+                          <td><b>Negative HPV test</b></td>
+                          <td>0</td>
+                          <td>1950</td>
+                          <td>1950</td>
+                        </tr>
+                        <tr>
+                          <td><b>Total</b></td>
+                          <td>47</td>
+                          <td>2234</td>
+                          <td>2281</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-wrapper">
+                    <table class="alt">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td colspan="2">
+                            <b>Histologically proven high-grade lesion</b>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td><b>Yes</b></td>
+                          <td><b>No</b></td>
+                          <td><b>Total</b></td>
+                        </tr>
+                        <tr>
+                          <td><b>Positive cytology</b></td>
+                          <td>32</td>
+                          <td>104</td>
+                          <td>136</td>
+                        </tr>
+                        <tr>
+                          <td><b>Negative cytology</b></td>
+                          <td>15</td>
+                          <td>2130</td>
+                          <td>2145</td>
+                        </tr>
+                        <tr>
+                          <td><b>Total</b></td>
+                          <td>47</td>
+                          <td>2234</td>
+                          <td>2281</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  </header>
+            
+                  <!-- questionTitle -->
+                  <p class="titlecontenedor title">
+                  {{ quizB.questions[questionIndex].text }}
+                  </p>
+                  <h2 class="align-center bgamarillo">FALTA PREGUNTA, RESPUESTAS Y FEEDBACK</h2>
+
+                  <!-- quizBOptions -->
+                  <div class="optioncontenedor">
+                  <div
+                    class="option"
+                    v-for="(response, index) in quizB.questions[questionIndex].responses"
+                    @click="selectOption(index)"
+                    :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                    :key="index"
+                  >
+                    {{ index | charIndex }}. {{ response.text }}
+                  </div>
+                  </div>
+            
+                  <!--quizBFooter: navigation and progress-->
+                  <footer class="questionFooter">
+                    <!--pagination-->
+                    <nav class="pagination" role="navigation" aria-label="pagination">
+                      <!-- back button -->
+                      <a
+                      class=""
+                      v-on:click="prev();"
+                      :disabled="questionIndex < 1"
+                      >
+                      </a>
+              
+                      <!-- next button -->
+                      <a
+                      class="button"
+                      :class="(userResponses[questionIndex]==null)?'':'is-active'"
+                      v-on:click="next();"
+                      :disabled="questionIndex>=quiz.questions.length"
+                      >
+                      {{ (userResponses[questionIndex]==null)?'':'check' }}
+                      </a>
+                    </nav>
+                    <!--/pagination-->
+                    </footer>
+                    <!--/quizBFooter-->
+                </div>
+                <!--/questioncontenedor-->
+            
+                <!--quizBCompletedResult-->
+                <div
+                  v-if="questionIndex >= quizB.questions.length"
+                  v-bind:key="questionIndex"
+                  class="quizBCompleted has-text-centered"
+                >
+                  <!-- quizBCompletedIcon: Achievement Icon -->
+                  <span class="icon">
+                    <br>
+                  <i
+                    class="fa"
+                    :class="score()<1?'fa-times-circle salmon':'fa-check-circle'"
+                  ></i>
+                  </span>
+            
+                  <!--resultTitleBlock-->
+                  <h2 class="title">
+                  {{ score()<1?'INCORRECT':'CORRECT!'
+                  }}
+                  </h2>
+                  <p class="subtitle"><br><br>
+                  </p>
+                  <br><br><br>
+                  <a class="button" @click="restart()"
+                  >restart <i class="fa fa-refresh"></i
+                  ></a><br><br><br><br><br><br>
+                  <!--/resultTitleBlock-->
+                </div>
+                <!--/quizBCompetedResult-->
+                </transition>
+              </div>
+              <!--/questionBox-->
+            </div>
+              <!--/contenedor-->
+              <!-- partial -->
+            </section>
+          </div class="main">
+          </div>
+
           <!-- Section -->
           <section class="main">
             <p>
@@ -569,9 +940,164 @@
             </p>
           </section>
           <!-- Section -->
-          <section class="main accent2">
-            <h2>EJERCICIO</h2>
-          </section>
+         <!-- QUIZ 3-->
+         <div class="wrapper">
+          <div class="inner">
+            <!-- Main -->
+            <section class="main">
+        <!-- Section -->
+        <div class="contenedor">
+          <!--questionBox-->
+          <div class="questionBox" id="appC">
+            <!-- transition -->
+            <transition
+            :duration="{ enter: 500, leave: 300 }"
+            enter-active-class="animated"
+            leave-active-class="animated"
+            mode="out-in"
+            >
+            <!--qusetioncontenedor-->
+            <div
+              class="questioncontenedor"
+              v-if="questionIndex<quizC.questions.length"
+              v-bind:key="questionIndex"
+            >
+              <header>
+                <h2>Quiz 3</h2>
+              <span class="icon solid fa-question major accent4"></span>
+              <br>
+              <br>
+              <p>According to the results obtained in previous exercises, and with the information in the following table, calculate the LR+ and LR- for high-risk HPV testing.</p>
+              <div class="table-wrapper">
+                <table class="alt">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td colspan="2">
+                        <b>Histologically proven high-grade lesion</b>
+                      </td>
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td></td>
+                      <td><b>Yes</b></td>
+                      <td><b>No</b></td>
+                      <td><b>Total</b></td>
+                    </tr>
+                   
+                    <tr>
+                      <td><b>Positive HPV test</b></td>
+                      <td>47</td>
+                      <td>284</td>
+                      <td>331</td>
+                    </tr>
+                    <tr>
+                      <td><b>Negative HPV test</b></td>
+                      <td>0</td>
+                      <td>1950</td>
+                      <td>1950</td>
+                    </tr>
+                    <tr>
+                      <td><b>Total</b></td>
+                      <td>47</td>
+                      <td>2234</td>
+                      <td>2281</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
+              </header>
+        
+              <!-- questionTitle -->
+              <p class="titlecontenedor title">
+              {{ quizC.questions[questionIndex].text }}
+              </p>
+              <h2 class="align-center bgamarillo">FALTA PREGUNTA, RESPUESTAS Y FEEDBACK</h2>
+
+              <!-- quizCOptions -->
+              <div class="optioncontenedor">
+              <div
+                class="option"
+                v-for="(response, index) in quizC.questions[questionIndex].responses"
+                @click="selectOption(index)"
+                :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                :key="index"
+              >
+                {{ index | charIndex }}. {{ response.text }}
+              </div>
+              </div>
+        
+              <!--quizCFooter: navigation and progress-->
+              <footer class="questionFooter">
+              <!--pagination-->
+              <nav class="pagination" role="navigation" aria-label="pagination">
+                <!-- back button -->
+                <a
+                class=""
+                v-on:click="prev();"
+                :disabled="questionIndex < 1"
+                >
+                </a>
+        
+                <!-- next button -->
+                <a
+                class="button"
+                :class="(userResponses[questionIndex]==null)?'':'is-active'"
+                v-on:click="next();"
+                :disabled="questionIndex>=quizC.questions.length"
+                >
+                {{ (userResponses[questionIndex]==null)?'':'check' }}
+                </a>
+              </nav>
+              <!--/pagination-->
+              </footer>
+              <!--/quizCFooter-->
+            </div>
+            <!--/questioncontenedor-->
+        
+            <!--quizCCompletedResult-->
+            <div
+              v-if="questionIndex >= quizC.questions.length"
+              v-bind:key="questionIndex"
+              class="quizCCompleted has-text-centered"
+            >
+              <!-- quizCCompletedIcon: Achievement Icon -->
+              <span class="icon">
+                <br>
+              <i
+                class="fa"
+                :class="score()<1?'fa-times-circle salmon':'fa-check-circle'"
+              ></i>
+              </span>
+        
+              <!--resultTitleBlock-->
+              <h2 class="title">
+              {{ score()<1?'INCORRECT':'CORRECT!'
+              }}
+              </h2>
+              <p class="subtitle"><br><br>
+               
+              </p>
+              <br /><br><br>
+              <a class="button" @click="restart()"
+              >restart <i class="fa fa-refresh"></i
+              ></a><br><br><br><br><br><br>
+              <!--/resultTitleBlock-->
+            </div>
+            <!--/quizCCompetedResult-->
+            </transition>
+          </div>
+          <!--/questionBox-->
+        </div>
+          <!--/contenedor-->
+          <!-- partial -->
+        </section>
+      
+
+      </div class="main">
+      </div>
           <!-- Section -->
           <section class="main">
             <p>
@@ -644,9 +1170,123 @@
             </div>
           </section>
           <!-- Section -->
-          <section class="main accent2">
-            <h2>EJERCICIO</h2>
-          </section>
+         <!-- QUIZ 4-->
+         <div class="wrapper">
+          <div class="inner">
+            <!-- Main -->
+            <section class="main">
+        <!-- Section -->
+        <div class="contenedor">
+          <!--questionBox-->
+          <div class="questionBox" id="appD">
+            <!-- transition -->
+            <transition
+            :duration="{ enter: 500, leave: 300 }"
+            enter-active-class="animated"
+            leave-active-class="animated"
+            mode="out-in"
+            >
+            <!--qusetioncontenedor-->
+            <div
+              class="questioncontenedor"
+              v-if="questionIndex<quizD.questions.length"
+              v-bind:key="questionIndex"
+            >
+              <header>
+                <h2>Quiz 4</h2>
+              <span class="icon solid fa-question major accent4"></span>
+              <br>
+              <br>
+              <p>According to the following ROC curves and AUC estimations, for Hybrid Capture II test used in the screening and diagnosis groups with CIN2/3 or worse.</p>
+              
+              <img class="image" src="images/006.png" alt="" />
+
+            
+              </header>
+       
+              <!-- questionTitle -->
+              <p class="titlecontenedor title">
+                {{ quizD.questions[questionIndex].text }}
+              </p>
+              <h2 class="align-center bgamarillo">FALTA RESPUESTA CORRECTA Y FEEDBACK</h2>
+              <!-- quizDOptions -->
+              <div class="optioncontenedor">
+              <div
+                class="option"
+                v-for="(response, index) in quizD.questions[questionIndex].responses"
+                @click="selectOption(index)"
+                :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                :key="index"
+              >
+                {{ index | charIndex }}. {{ response.text }}
+              </div>
+              </div>
+        
+              <!--quizDFooter: navigation and progress-->
+              <footer class="questionFooter">
+              <!--pagination-->
+              <nav class="pagination" role="navigation" aria-label="pagination">
+                <!-- back button -->
+                <a
+                class=""
+                v-on:click="prev();"
+                :disabled="questionIndex < 1"
+                >
+                </a>
+        
+                <!-- next button -->
+                <a
+                class="button"
+                :class="(userResponses[questionIndex]==null)?'':'is-active'"
+                v-on:click="next();"
+                :disabled="questionIndex>=quizD.questions.length"
+                >
+                {{ (userResponses[questionIndex]==null)?'':'check' }}
+                </a>
+              </nav>
+              <!--/pagination-->
+              </footer>
+              <!--/quizDFooter-->
+            </div>
+            <!--/questioncontenedor-->
+        
+            <!--quizDCompletedResult-->
+            <div
+              v-if="questionIndex >= quizD.questions.length"
+              v-bind:key="questionIndex"
+              class="quizDCompleted has-text-centered"
+            >
+              <!-- quizDCompletedIcon: Achievement Icon -->
+              <span class="icon">
+                <br>
+              <i
+                class="fa"
+                :class="score()<1?'fa-times-circle salmon':'fa-check-circle'"
+              ></i>
+              </span>
+        
+              <!--resultTitleBlock-->
+              <h2 class="title">
+              {{ score()<1?'INCORRECT':'CORRECT!'
+              }}
+              </h2>
+              <p class="subtitle"><br><br>
+               
+              </p>
+              <br /><br><br>
+              <a class="button" @click="restart()"
+              >restart <i class="fa fa-refresh"></i
+              ></a><br><br><br><br><br><br>
+              <!--/resultTitleBlock-->
+            </div>
+            <!--/quizDCompetedResult-->
+            </transition>
+          </div>
+          <!--/questionBox-->
+        </div>
+          <!--/contenedor-->
+          <!-- partial -->
+        </section>
           <!-- Section -->
           <section class="main">
             <h3>Overall diagnostic accuracy</h3>
@@ -675,9 +1315,7 @@
             </blockquote>
           </section>
           <!-- Section -->
-          <section class="main accent2">
-            <h2>EJERCICIO</h2>
-          </section>
+       
           <!-- nuevo apartado -->
           <section class="main accent4">
             <h2>2.3 Potential biases in screening</h2>
@@ -805,9 +1443,13 @@
     <!-- quizz -->
 
     <script src="actividades/js/quiz1A.js"></script>
-    <script src="actividades/js/quiz1.js"></script>
-
+    <script src="actividades/js/quiz1.js"></script>   
+    <script src="actividades/js/quiz2.js"></script>    
+    <script src="actividades/js/quiz3.js"></script>   
+    <script src="actividades/js/quiz4.js"></script>
+    
     <!--
+ 
     <script src="actividades/js/grafico1B.js"></script>
     <script src="actividades/js/grafico1A.js"></script>
     <script src="actividades/js/jquery.min.js"></script>
