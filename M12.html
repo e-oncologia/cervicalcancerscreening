@@ -68,6 +68,8 @@
           <!-- Main -->
           <section class="main">
             <header class="major">
+              <h3 class="bgamarillo">The text presented is based on a previous version of the course content</h3>
+              <br>
               <h1 class="gris">Test parameters and requirements</h1>
             </header>
           </section>
@@ -159,7 +161,7 @@
             <div class="row">
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgamarillo">&nbsp;SUMMARY TABLE 1&nbsp;</span>
+                  <span class="bgceleste">&nbsp;SUMMARY TABLE 1&nbsp;</span>
                 </h4>
                 <div class="table-wrapper">
                   <table class="alt">
@@ -273,7 +275,7 @@
               <span class="figuras">TABLE 1</span>.
             </p>
             <h4>
-              <span class="bgamarillo">&nbsp;TABLE 1.&nbsp;</span> Test results
+              <span class="bgceleste">&nbsp;TABLE 1.&nbsp;</span> Test results
               according to disease status.
             </h4>
             <div class="table-wrapper">
@@ -534,7 +536,7 @@
                     v-on:click="next();"
                     :disabled="questionIndex>=quiz.questions.length"
                     >
-                    {{ (userResponses[questionIndex]==null)?'':'check' }}
+                    {{ (userResponses[questionIndex]==null)?'check':'check' }}
                     </a>
                   </nav>
                   <!--/pagination-->
@@ -563,9 +565,9 @@
                   }}
                   </h2>
                   <p class="subtitle"><br><br>
-                    <span class="bgamarillo">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
+                    <span class="bgceleste">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
                   </p>
-                  <p><span class="bgamarillo">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
+                  <p><span class="bgceleste">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
                   <br /><br><br>
                   <a class="button" @click="restart()"
                   >restart <i class="fa fa-refresh"></i
@@ -612,7 +614,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgamarillo">&nbsp;FIGURE 2.&nbsp;</span>
+                  <span class="bgceleste">&nbsp;FIGURE 2.&nbsp;</span>
                   Distribution of disease and non-disease with diagnostic
                   cut-off values and subsequent effects on sensitivity and
                   specificity.
@@ -792,7 +794,7 @@
                   <p class="titlecontenedor title">
                   {{ quizB.questions[questionIndex].text }}
                   </p>
-                  <h2 class="align-center bgamarillo">FALTA PREGUNTA, RESPUESTAS Y FEEDBACK</h2>
+                  <h2 class="align-center bgamarillo">QUESTION MISSING</h2>
 
                   <!-- quizBOptions -->
                   <div class="optioncontenedor">
@@ -826,7 +828,7 @@
                       v-on:click="next();"
                       :disabled="questionIndex>=quiz.questions.length"
                       >
-                      {{ (userResponses[questionIndex]==null)?'':'check' }}
+                      {{ (userResponses[questionIndex]==null)?'check':'check' }}
                       </a>
                     </nav>
                     <!--/pagination-->
@@ -917,7 +919,7 @@
                 diagnosis in most of the circumstances. If LR+ is equal to 1,
                 the test is not able to distinguish ill from healthy
                 individuals. <br /><b>LR+ = Sensitivity / (1-Specificity)</b
-                ><br /><span class="bgamarillo"
+                ><br /><span class="bgceleste"
                   >A high LR+ indicates that the test is useful, but it does not
                   necessarily indicate that a positive test is a good indicator
                   of the presence of disease.</span
@@ -1014,7 +1016,7 @@
               <p class="titlecontenedor title">
               {{ quizC.questions[questionIndex].text }}
               </p>
-              <h2 class="align-center bgamarillo">FALTA PREGUNTA, RESPUESTAS Y FEEDBACK</h2>
+              <h2 class="align-center bgamarillo">QUESTION MISSING</h2>
 
               <!-- quizCOptions -->
               <div class="optioncontenedor">
@@ -1048,7 +1050,7 @@
                 v-on:click="next();"
                 :disabled="questionIndex>=quizC.questions.length"
                 >
-                {{ (userResponses[questionIndex]==null)?'':'check' }}
+                {{ (userResponses[questionIndex]==null)?'check':'check' }}
                 </a>
               </nav>
               <!--/pagination-->
@@ -1112,18 +1114,18 @@
             </p>
             <ul>
               <li>
-                <span class="bgamarillo">&nbsp;0 to 1: </span>
+                <span class="bgceleste">&nbsp;0 to 1: </span>
                 &nbsp;Decreased evidence for disease. Values closer to zero have
                 a higher decrease in probability of disease. For example, a LR
                 of 0.1 decreases probability by -45%, while a value of -0.5
                 decreases probability by -15%.
               </li>
               <li>
-                <span class="bgamarillo">&nbsp;1: </span> &nbsp;No diagnostic
+                <span class="bgceleste">&nbsp;1: </span> &nbsp;No diagnostic
                 value.
               </li>
               <li>
-                <span class="bgamarillo">&nbsp;Above 1: </span>
+                <span class="bgceleste">&nbsp;Above 1: </span>
 
                 &nbsp;Increased evidence for disease. The farther away from 1,
                 the more chance of disease. For example, a LR of 2 increases the
@@ -1162,7 +1164,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgamarillo">&nbsp;FIGURE 3.&nbsp;</span> Example
+                  <span class="bgceleste">&nbsp;FIGURE 3.&nbsp;</span> Example
                   of ROC curves and AUC.
                 </h4>
                 <img class="image main" src="images/003.png" alt="" />
@@ -1208,7 +1210,7 @@
               <p class="titlecontenedor title">
                 {{ quizD.questions[questionIndex].text }}
               </p>
-              <h2 class="align-center bgamarillo">FALTA RESPUESTA CORRECTA Y FEEDBACK</h2>
+              <h2 class="align-center bgamarillo">QUESTION MISSING</h2>
               <!-- quizDOptions -->
               <div class="optioncontenedor">
               <div
@@ -1241,7 +1243,7 @@
                 v-on:click="next();"
                 :disabled="questionIndex>=quizD.questions.length"
                 >
-                {{ (userResponses[questionIndex]==null)?'':'check' }}
+                {{ (userResponses[questionIndex]==null)?'check':'check' }}
                 </a>
               </nav>
               <!--/pagination-->
@@ -1296,7 +1298,7 @@
               the total amount of subjects:
             </p>
             <p class="align-center">
-              <span class="bgamarillo">
+              <span class="bgceleste">
                 &nbsp;Overall diagnostic accuracy = (TP + TN) / total
                 subjects&nbsp;</span
               >
@@ -1345,7 +1347,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgamarillo">&nbsp;FIGURE 4.&nbsp;</span> Lead
+                  <span class="bgceleste">&nbsp;FIGURE 4.&nbsp;</span> Lead
                   time bias.
                 </h4>
                 <img class="image main" src="images/004.png" alt="" />
@@ -1376,7 +1378,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgamarillo">&nbsp;FIGURE 5.&nbsp;</span> Length
+                  <span class="bgceleste">&nbsp;FIGURE 5.&nbsp;</span> Length
                   time bias.
                 </h4>
                 <img class="image main" src="images/005.png" alt="" />

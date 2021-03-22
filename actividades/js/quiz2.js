@@ -2,12 +2,12 @@ var quizB = {
     user: "e-oncología",
     questions: [
       {
-        text: "PREGUNTA",
+        text: "QUESTION",
         responses: [
-          { text: "FALTAN LAS OPCIONES" },
-          { text: "FALTAN LAS OPCIONES", correct: true },
-          { text: "FALTAN LAS OPCIONES" },
-          { text: "FALTAN LAS OPCIONES" },
+          { text: "OPTION MISSING" },
+          { text: "OPTION MISSING", correct: true },
+          { text: "OPTION MISSING" },
+          { text: "OPTION MISSING" },
         ],
       },
 

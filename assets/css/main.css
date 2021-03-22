@@ -348,13 +348,16 @@ h6 {
   color: #ffd000;
 }
 .bgamarillo {
-  background-color: #7082cd80;
+  background-color: #ffd000;
 }
 .bgamarilloclaro {
   background-color: rgb(255, 208, 0, 0.5);
 }
 .azul {
   color: #000033;
+}
+.bgceleste {
+  background-color: #7082cd80;
 }
 
 .gordi {
