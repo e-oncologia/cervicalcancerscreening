@@ -201,7 +201,7 @@ body.is-preload *:after {
 /* Type */
 
 body {
-  color: rgba(67, 75, 86, 0.75);
+  color: #30353b;
 }
 ::selection {
   background: #ffd000;
@@ -253,7 +253,7 @@ a:hover {
 
 strong,
 b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 em,
@@ -364,7 +364,7 @@ h6 {
   font-weight: 700;
 }
 .gris {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .figuras {
@@ -1968,6 +1968,32 @@ hr {
 }
 
 .box {
+  border-color: rgba(67, 75, 86, 0.25);
+}
+
+/* Caja */
+
+.caja {
+  border: 10px solid;
+  border-left: 2px rgb(255, 255, 255);
+  border-top: 2px rgb(255, 255, 255);
+  border-image-source: linear-gradient(to bottom, #ff7b6f, #c471ed, #7183cd);
+  border-image-slice: 1;
+}
+
+.caja > :last-child,
+.caja > :last-child > :last-child,
+.caja > :last-child > :last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.caja.alt {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+
+.caja {
   border-color: rgba(67, 75, 86, 0.25);
 }
 
