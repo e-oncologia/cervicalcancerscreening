@@ -1993,9 +1993,7 @@ hr {
   padding: 0;
 }
 
-.caja {
-  border-color: rgba(67, 75, 86, 0.25);
-}
+
 
 /* Button */
 
@@ -3318,7 +3316,7 @@ table.alt tbody tr td {
 }
 
 .spotlights > article .content {
-  padding: 4em 5em 2em 5em;
+  padding: 1em;
   text-align: left;
 }
 
@@ -3337,11 +3335,11 @@ table.alt tbody tr td {
 }
 
 .spotlights > article > :nth-child(1) {
-  width: 40%;
+  width: 60%;
 }
 
 .spotlights > article > :nth-child(2) {
-  width: 60%;
+  width: 40%;
 }
 
 .spotlights > article:nth-child(2n - 1) {
@@ -3352,11 +3350,11 @@ table.alt tbody tr td {
 }
 
 .spotlights > article:nth-child(2n - 1) > :nth-child(1) {
-  width: 60%;
+  width: 40%;
 }
 
 .spotlights > article:nth-child(2n - 1) > :nth-child(2) {
-  width: 40%;
+  width: 60%;
 }
 
 @media screen and (max-width: 1680px) {
