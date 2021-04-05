@@ -335,3 +335,32 @@ var settings = {
 			});
 
 })(jQuery);
+
+
+
+function muestra1() {
+	var x = document.getElementById("myDIV1");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestra2() {
+	var x = document.getElementById("myDIV2");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestra3() {
+	var x = document.getElementById("myDIV3");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }

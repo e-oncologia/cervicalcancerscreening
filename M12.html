@@ -161,7 +161,7 @@
             <div class="row">
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgceleste">&nbsp;SUMMARY TABLE 1&nbsp;</span>
+                  <span class="bggradiente">&nbsp;SUMMARY TABLE 1&nbsp;</span>
                 </h4>
                 <div class="table-wrapper">
                   <table class="alt">
@@ -201,6 +201,7 @@
               test available to confirm disease to obtain the test accuracy
               measures.
             </p>
+            <div class="caja">
             <div class="box">
               <h3>EXAMPLE</h3>
               <p>
@@ -208,8 +209,8 @@
                 followed by a confirmatory test and by biopsy of cervical
                 samples if both test are positive, to provide the instruction
                 for which treatment modality is best.
-              </p>
-            </div>
+              </p></div></div>
+              <br>
             <p>Test accuracy measures inform about the test ability to:</p>
 
             <div class="table-wrapper">
@@ -275,7 +276,7 @@
               <span class="figuras">TABLE 1</span>.
             </p>
             <h4>
-              <span class="bgceleste">&nbsp;TABLE 1&nbsp;</span> Test results
+              <span class="bggradiente">&nbsp;TABLE 1&nbsp;</span> Test results
               according to disease status.
             </h4>
             <div class="table-wrapper">
@@ -315,7 +316,8 @@
                 </tbody>
               </table>
             </div>
-            <div class="box">
+            <div class="caja">
+              <div class="box">
               <h3>EXAMPLE</h3>
               <p>
                 Cervical cancer screening involves categorizing asymptomatic
@@ -333,7 +335,7 @@
                   TN - those without cervical cancer that test HPV negative.
                 </li>
               </ul>
-            </div>
+            </div></div><br>
             <div class="table-wrapper">
               <table class="alt">
                 <tbody>
@@ -565,9 +567,9 @@
                   }}
                   </h2>
                   <p class="subtitle"><br><br>
-                    <span class="bgceleste">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
+                    <span class="bggradiente">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
                   </p>
-                  <p><span class="bgceleste">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
+                  <p><span class="bggradiente">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
                   <br /><br><br>
                   <a class="button" @click="restart()"
                   >restart <i class="fa fa-refresh"></i
@@ -614,7 +616,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgceleste">&nbsp;FIGURE 2&nbsp;</span>
+                  <span class="bggradiente">&nbsp;FIGURE 2&nbsp;</span>
                   Distribution of disease and non-disease with diagnostic
                   cut-off values and subsequent effects on sensitivity and
                   specificity.
@@ -623,7 +625,8 @@
               </div>
             </div>
             <br />
-            <div class="box">
+            <div class="caja">
+              <div class="box">
               <h3>EXAMPLE</h3>
               <p>
                 HPV tests aim to detect HPV persistent infections as the
@@ -632,7 +635,7 @@
                 infections, we may sometimes identify an HPV infection that will
                 clear spontaneously and not causing disease.
               </p>
-            </div>
+            </div></div>
             <br />
             <!-- Blockquote -->
             <h3>IMPORTANT</h3>
@@ -878,6 +881,7 @@
 
           <!-- Section -->
           <section class="main">
+           
             <p>
               Predictive values are affected by disease prevalence. The PPV of a
               test increases with increasing prevalence, while the NPV decreases
@@ -919,7 +923,7 @@
                 diagnosis in most of the circumstances. If LR+ is equal to 1,
                 the test is not able to distinguish ill from healthy
                 individuals. <br /><b>LR+ = Sensitivity / (1-Specificity)</b
-                ><br /><span class="bgceleste"
+                ><br /><span class="bggradiente"
                   >A high LR+ indicates that the test is useful, but it does not
                   necessarily indicate that a positive test is a good indicator
                   of the presence of disease.</span
@@ -1114,18 +1118,18 @@
             </p>
             <ul>
               <li>
-                <span class="bgceleste">&nbsp;0 to 1: </span>
+                <span class="bggradiente">&nbsp;0 to 1: </span>
                 &nbsp;Decreased evidence for disease. Values closer to zero have
                 a higher decrease in probability of disease. For example, a LR
                 of 0.1 decreases probability by -45%, while a value of -0.5
                 decreases probability by -15%.
               </li>
               <li>
-                <span class="bgceleste">&nbsp;1: </span> &nbsp;No diagnostic
+                <span class="bggradiente">&nbsp;1: </span> &nbsp;No diagnostic
                 value.
               </li>
               <li>
-                <span class="bgceleste">&nbsp;Above 1: </span>
+                <span class="bggradiente">&nbsp;Above 1: </span>
 
                 &nbsp;Increased evidence for disease. The farther away from 1,
                 the more chance of disease. For example, a LR of 2 increases the
@@ -1164,7 +1168,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgceleste">&nbsp;FIGURE 3&nbsp;</span> Example
+                  <span class="bggradiente">&nbsp;FIGURE 3&nbsp;</span> Example
                   of ROC curves and AUC.
                 </h4>
                 <img class="image main" src="images/003.png" alt="" />
@@ -1298,7 +1302,7 @@
               the total amount of subjects:
             </p>
             <p class="align-center">
-              <span class="bgceleste">
+              <span class="bggradiente">
                 &nbsp;Overall diagnostic accuracy = (TP + TN) / total
                 subjects&nbsp;</span
               >
@@ -1347,7 +1351,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgceleste">&nbsp;FIGURE 4&nbsp;</span> Lead
+                  <span class="bggradiente">&nbsp;FIGURE 4&nbsp;</span> Lead
                   time bias.
                 </h4>
                 <img class="image main" src="images/004.png" alt="" />
@@ -1378,13 +1382,14 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bgceleste">&nbsp;FIGURE 5&nbsp;</span> Length
+                  <span class="bggradiente">&nbsp;FIGURE 5&nbsp;</span> Length
                   time bias.
                 </h4>
                 <img class="image main" src="images/005.png" alt="" />
               </div>
             </div>
-            <div class="box">
+            <div class="caja">
+              <div class="box">
               <h3>EXAMPLE</h3>
               <p>
                 Impotence and incontinence are common side effects of usual
@@ -1395,7 +1400,8 @@
                 diagnosed or cause harm but if detected and treated could
                 unnecessarily suffer of these side effects (12).
               </p>
-            </div>
+            </div></div>
+            <br>
             <h3>Selection bias</h3>
             <p>
               A self-selection bias may occur because participants may be
