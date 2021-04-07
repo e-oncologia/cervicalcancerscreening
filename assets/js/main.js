@@ -337,7 +337,7 @@ var settings = {
 })(jQuery);
 
 
-
+// Mostrar
 function muestra1() {
 	var x = document.getElementById("myDIV1");
 	if (x.style.display === "none") {
@@ -358,6 +358,14 @@ function muestra1() {
 
   function muestra3() {
 	var x = document.getElementById("myDIV3");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra4() {
+	var x = document.getElementById("myDIV4");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
 	} else {
