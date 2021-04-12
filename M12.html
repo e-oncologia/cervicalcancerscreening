@@ -87,6 +87,9 @@
             <p>Thus, a screening test needs to be (6):</p>
             <div class="table-wrapper">
               <table>
+                <thead>
+                  <td colspan="2"></td>
+                </thead>
                 <tbody>
                   <tr>
                     <th>Accurate</th>
@@ -154,15 +157,21 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+                <tfoot>
+                  <td colspan="2"></td>
+                </tfoot> </table>
             </div>
             <div class="row">
               <div class="col-6 col-12-small">
-                <h4>
-                  <span class="bggradiente">&nbsp;SUMMARY TABLE 1&nbsp;</span>
-                </h4>
+                
                 <div class="table-wrapper">
-                  <table class="alt">
+                  <table class="">
+                    <thead>
+                      <tr>
+                        <th><span class="bgazul">&nbsp;SUMMARY TABLE 1&nbsp;</span></th>
+                       
+                      </tr>
+                    </thead>
                     <tbody>
                       <tr>
                         <td>Overtreatment.</td>
@@ -180,6 +189,9 @@
                         </td>
                       </tr>
                     </tbody>
+                    <tfoot>
+                      <tr></tr>
+                    </tfoot>
                   </table>
                 </div>
               </div>
@@ -214,6 +226,11 @@
 
             <div class="table-wrapper">
               <table>
+                <thead>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
                     <th>Discriminate health and disease status:</th>
@@ -230,6 +247,11 @@
                     </td>
                   </tr>
                 </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                </tfoot>
               </table>
             </div>
 
@@ -274,12 +296,15 @@
               This information can be displayed as it is shown in
               <span class="figuras">TABLE 1</span>.
             </p>
-            <h4>
-              <span class="bggradiente">&nbsp;TABLE 1&nbsp;</span> Test results
-              according to disease status.
-            </h4>
+            
             <div class="table-wrapper">
-              <table class="alt">
+              <table>
+                <thead>
+                  <tr>
+                    <td colspan="4"><span class="bgazul">&nbsp;TABLE 1&nbsp;</span> Test results
+                      according to disease status.</td>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
                     <td></td>
@@ -313,6 +338,11 @@
                     <td>Total</td>
                   </tr>
                 </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="4"></td>
+                  </tr>
+                </tfoot>
               </table>
             </div>
             <div class="caja">
@@ -334,7 +364,12 @@
               </ul>
             </div></div><br>
             <div class="table-wrapper">
-              <table class="alt">
+              <table>
+                <thead>
+                  <tr>
+                    <td colspan="4"></td>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
                     <td></td>
@@ -368,6 +403,11 @@
                     <td>Total</td>
                   </tr>
                 </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="4"></td>
+                  </tr>
+                </tfoot>
               </table>
             </div>
             <h3>Sensitivity and Specificity</h3>
@@ -377,6 +417,11 @@
             </p>
             <div class="table-wrapper">
               <table>
+                <thead>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
                     <th>Sensitivity:</th>
@@ -394,6 +439,11 @@
                     </td>
                   </tr>
                 </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                </tfoot>
               </table>
             </div>
           </section>
@@ -421,8 +471,8 @@
                   v-bind:key="questionIndex"
                 >
                 <header>
-                  <h2>Quiz 1</h2>
-                  <span class="icon solid fa-question major accent4"></span>
+                  <h2 class="bgamarillo">Check your knowledge</h2>
+                  <span class="icon solid fa-question major amarillo"></span>
                   <br>
                   <br>
                   <p>According to the information displayed in the following tables, calculate sensitivity and specificity for high-risk HPV testing and conventional cytology to detect histologically proven high-grade lesion.</p>
@@ -564,9 +614,9 @@
                   }}
                   </h2>
                   <p class="subtitle"><br><br>
-                    <span class="bggradiente">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
+                    <span class="bgazul">&nbsp;HPV test&nbsp;</span> identifies all high grade lesions as positive while Cytology is missing 15 cases.
                   </p>
-                  <p><span class="bggradiente">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
+                  <p><span class="bgazul">&nbsp;HPV test&nbsp;</span> will category as positive 284 women with no evidence of high grade, while cytology will do so for 104 women. Thus, specificity is higher fro cytology as compared to HPV when both are compared to histological results.</p>
                   <br /><br><br>
                   <a class="button" @click="restart()"
                   >restart <i class="fa fa-refresh"></i
@@ -613,7 +663,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bggradiente">&nbsp;FIGURE 2&nbsp;</span>
+                  <span class="bgazul">&nbsp;FIGURE 2&nbsp;</span>
                   Distribution of disease and non-disease with diagnostic
                   cut-off values and subsequent effects on sensitivity and
                   specificity.
@@ -635,7 +685,7 @@
             </div></div>
             <br />
             <!-- Blockquote -->
-            <h3>IMPORTANT</h3>
+            <h2>IMPORTANT</h2>
             <blockquote>
               An ideal screening test should have the maximum sensitivity and
               specificity, but in real life this is almost impossible to
@@ -710,8 +760,8 @@
                   v-bind:key="questionIndex"
                 >
                   <header>
-                    <h2>Quiz 2</h2>
-                  <span class="icon solid fa-question major accent4"></span>
+                    <h2 class="bgamarillo">Check your knowledge</h2>
+                    <span class="icon solid fa-question major amarillo"></span>
                   <br>
                   <br>
                   <p>According to the information displayed in the following tables, calculate the PPV and the NPV for high-risk HPV testing and conventional cytology.</p>
@@ -795,7 +845,7 @@
                   <p class="titlecontenedor title">
                   {{ quizB.questions[questionIndex].text }}
                   </p>
-                  <h2 class="align-center bgamarillo">QUESTION MISSING</h2>
+                  <h2 class="align-center">QUESTION HERE</h2>
 
                   <!-- quizBOptions -->
                   <div class="optioncontenedor">
@@ -922,7 +972,7 @@
                 diagnosis in most of the circumstances. If LR+ is equal to 1,
                 the test is not able to distinguish ill from healthy
                 individuals. <br /><b>LR+ = Sensitivity / (1-Specificity)</b
-                ><br /><span class="bggradiente"
+                ><br /><span class="bgazul"
                   >A high LR+ indicates that the test is useful, but it does not
                   necessarily indicate that a positive test is a good indicator
                   of the presence of disease.</span
@@ -968,8 +1018,8 @@
               v-bind:key="questionIndex"
             >
               <header>
-                <h2>Quiz 3</h2>
-              <span class="icon solid fa-question major accent4"></span>
+                <h2 class="bgamarillo">Check your knowledge</h2>
+              <span class="icon solid fa-question major amarillo"></span>
               <br>
               <br>
               <p>According to the results obtained in previous exercises, and with the information in the following table, calculate the LR+ and LR- for high-risk HPV testing.</p>
@@ -1019,7 +1069,7 @@
               <p class="titlecontenedor title">
               {{ quizC.questions[questionIndex].text }}
               </p>
-              <h2 class="align-center bgamarillo">QUESTION MISSING</h2>
+              <h2 class="align-center">QUESTION HERE</h2>
 
               <!-- quizCOptions -->
               <div class="optioncontenedor">
@@ -1118,18 +1168,18 @@
             <ul class="circulito">
 
               <li>
-                <span class="bggradiente">&nbsp;0 to 1: </span>
+                <span class="bgazul">&nbsp;0 to 1: </span>
                 &nbsp;Decreased evidence for disease. Values closer to zero have
                 a higher decrease in probability of disease. For example, a LR
                 of 0.1 decreases probability by -45%, while a value of -0.5
                 decreases probability by -15%.
               </li>
               <li>
-                <span class="bggradiente">&nbsp;1: </span> &nbsp;No diagnostic
+                <span class="bgazul">&nbsp;1: </span> &nbsp;No diagnostic
                 value.
               </li>
               <li>
-                <span class="bggradiente">&nbsp;Above 1: </span>
+                <span class="bgazul">&nbsp;Above 1: </span>
 
                 &nbsp;Increased evidence for disease. The farther away from 1,
                 the more chance of disease. For example, a LR of 2 increases the
@@ -1168,7 +1218,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bggradiente">&nbsp;FIGURE 3&nbsp;</span> Example
+                  <span class="bgazul">&nbsp;FIGURE 3&nbsp;</span> Example
                   of ROC curves and AUC.
                 </h4>
                 <img class="image main" src="images/003.png" alt="" />
@@ -1199,8 +1249,8 @@
               v-bind:key="questionIndex"
             >
               <header>
-                <h2>Quiz 4</h2>
-              <span class="icon solid fa-question major accent4"></span>
+                <h2 class="bgamarillo">Check your knowledge</h2>
+              <span class="icon solid fa-question major amarillo"></span>
               <br>
               <br>
               <p>According to the following ROC curves and AUC estimations, for Hybrid Capture II test used in the screening and diagnosis groups with CIN2/3 or worse.</p>
@@ -1214,7 +1264,7 @@
               <p class="titlecontenedor title">
                 {{ quizD.questions[questionIndex].text }}
               </p>
-              <h2 class="align-center bgamarillo">QUESTION MISSING</h2>
+              <h2 class="align-center">QUESTION HERE</h2>
               <!-- quizDOptions -->
               <div class="optioncontenedor">
               <div
@@ -1302,7 +1352,7 @@
               the total amount of subjects:
             </p>
             <p class="align-center">
-              <span class="bggradiente">
+              <span class="bgazul">
                 &nbsp;Overall diagnostic accuracy = (TP + TN) / total
                 subjects&nbsp;</span
               >
@@ -1312,8 +1362,8 @@
               increases as the disease prevalence decreases.
             </p>
             <!-- Blockquote -->
-            <h3>IMPORTANT</h3>
-            <blockquote>
+            <h2>IMPORTANT</h2>
+                        <blockquote>
               For all test accuracy measures (sensitivity, specificity, PPV,
               NPV, LR+, LR-, and overall diagnostic accuracy), it is fundamental
               to report the results using uncertainty measures such as 95%
@@ -1351,7 +1401,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bggradiente">&nbsp;FIGURE 4&nbsp;</span> Lead
+                  <span class="bgazul">&nbsp;FIGURE 4&nbsp;</span> Lead
                   time bias.
                 </h4>
                 <img class="image main" src="images/004.png" alt="" />
@@ -1382,7 +1432,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <h4>
-                  <span class="bggradiente">&nbsp;FIGURE 5&nbsp;</span> Length
+                  <span class="bgazul">&nbsp;FIGURE 5&nbsp;</span> Length
                   time bias.
                 </h4>
                 <img class="image main" src="images/005.png" alt="" />
@@ -1401,17 +1451,19 @@
                 unnecessarily suffer of these side effects (12).
               </p>
             </div></div>
-            <br>
+            <br>            
             <h3>Selection bias</h3>
-            <p>
-              A self-selection bias may occur because participants may be
-              healthier and adhere better to cancer prevention recommendations,
-              as well as to therapy when they are cancer patients. Similarly,
-              patients with higher cancer risk because of a family history of
-              cancer may attend more frequently to screening programs (13).
-              Therefore the outcomes associated with these populations may be
-              better and bias the apparent value of the screening program.
-            </p>
+            
+                <p>
+                  A self-selection bias may occur because participants may be
+                  healthier and adhere better to cancer prevention recommendations,
+                  as well as to therapy when they are cancer patients. Similarly,
+                  patients with higher cancer risk because of a family history of
+                  cancer may attend more frequently to screening programs (13).
+                  Therefore the outcomes associated with these populations may be
+                  better and bias the apparent value of the screening program.
+                </p>
+              
           </section>
         </div>
       </div>
