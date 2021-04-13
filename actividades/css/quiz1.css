@@ -31,7 +31,8 @@
   max-width: 50rem;
   width: 50rem;
   min-height: 30rem;
-  background: #fafafa;
+  background: #ececec;
+
   position: relative;
   display: -webkit-box;
   display: flex;
@@ -133,7 +134,6 @@
   transition: 0.3s;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.5);
   border: transparent 1px solid;
 }
 .questionBox .questioncontenedor .optioncontenedor .option.is-selected {
