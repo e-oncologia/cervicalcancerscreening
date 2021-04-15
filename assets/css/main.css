@@ -3188,37 +3188,20 @@ ul {
 ul li {
   padding-left: 0.5em;
 }
-ul.circulito {
-  list-style: none;
-  margin: 0 0 0 0;
-  padding-left: 1em;
-}
-ul.circulito li::before {
-  content: "\2022";
-  color: #ff7b6f;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-.box ul {
-  list-style: none;
-  margin: 0 0 0 0;
-  padding-left: 1em;
-}
-.box ul li::before {
-  content: "\2022";
-  color: #ff7b6f;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
+
+ul.circulito,
+.cajaB ul,
+.cajaC ul,
+.cajaD ul,
+.box ul,
 .cajalinea ul {
   list-style: none;
   margin: 0 0 0 0;
   padding-left: 1em;
 }
+ul.circulito li::before,
+.cajaB ul li::before,
+.box ul li::before,
 .cajalinea ul li::before {
   content: "\2022";
   color: #656dba;
@@ -3226,12 +3209,6 @@ ul.circulito li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
-.cajaC ul,
-.cajaD ul {
-  list-style: none;
-  margin: 0 0 0 0;
-  padding-left: 1em;
 }
 
 .cajaC ul li::before,
