@@ -373,8 +373,8 @@ function muestra1() {
 	}
   }
 
-  function muestraDYK() {
-	var x = document.getElementById("DYK");
+  function muestraDYK1() {
+	var x = document.getElementById("DYK1");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
 	} else {
@@ -382,4 +382,93 @@ function muestra1() {
 	}
   }
 
-  
+  function muestraDYK2() {
+	var x = document.getElementById("DYK2");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraDYK3() {
+	var x = document.getElementById("DYK3");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraDYK4() {
+	var x = document.getElementById("DYK4");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+
+  function muestraOJO1() {
+	var x = document.getElementById("OJO1");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraOJO2() {
+	var x = document.getElementById("OJO2");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraOJO3() {
+	var x = document.getElementById("OJO3");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraOJO4() {
+	var x = document.getElementById("OJO4");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraOJO5() {
+	var x = document.getElementById("OJO5");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraOJO6() {
+	var x = document.getElementById("OJO6");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestraOJO7() {
+	var x = document.getElementById("OJO7");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
