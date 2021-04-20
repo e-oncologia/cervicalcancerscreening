@@ -1,0 +1,77 @@
+#map {
+  position: relative;
+  overflow: hidden;
+}
+#map img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  position: relative;
+}
+.info .info-card {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opactiy: 0;
+  transition: 0.2s all ease-in-out;
+}
+.card {
+  background: #e6e6e6;
+  color: #7b8b99;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.card > :last-child {
+  margin-bottom: 0;
+}
+.card-divider {
+  padding: 1rem;
+  background: #e6e6e6;
+}
+.card-divider > :last-child {
+  margin-bottom: 0;
+}
+.card-section {
+  padding: 1rem;
+}
+.card-section > :last-child {
+  margin-bottom: 0;
+}
+.close-button {
+  position: absolute;
+  color: #8a8a8a;
+  cursor: pointer;
+}
+[data-whatinput="mouse"] .close-button {
+  outline: 0;
+}
+.close-button:focus,
+.close-button:hover {
+  color: #0a0a0a;
+}
+.close-button.small {
+  right: 0.66rem;
+  top: 0.33em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.close-button,
+.close-button.medium {
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 2em;
+  line-height: 1;
+}
+.row-full {
+  max-width: 100% !important;
+}
+
+.row-large {
+  max-width: 1550px !important;
+}
+
+.row-small {
+  max-width: 975px !important;
+}
