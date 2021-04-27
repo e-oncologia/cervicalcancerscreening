@@ -670,150 +670,6 @@ h6 {
   vertical-align: middle;
 }
 
-/* FLIP CARD D */
-.flip-cardD {
-  background-color: transparent;
-  width: 100%;
-  height: 500px;
-  perspective: 1000px;
-  margin: 0 0 1.5em 0;
-}
-.flip-cardD-inner {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.flip-cardD:hover .flip-cardD-inner {
-  transform: rotateY(180deg);
-}
-.flip-cardD:hover .flip-cardD-inner span {
-  opacity: 0;
-  
-}
-.flip-cardD-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.flip-cardD-back {
-  position: absolute;
-  padding: 1em 1.5em;
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.flip-cardD-front {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-  -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-  -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-background-position: 0 0, 80px 80px;
--webkit-background-size: 20px 20px;
--moz-background-size: 20px 20px;
-background-size: 20px 20px;
-  color: #000033;
-  display: table;
-  margin: 0 auto;
-}
-.flip-cardD-front span {
-  opacity: 1;
-  transition: opacity 0s ease-in-out;
-  -moz-transition: opacity 0s ease-in-out;
-  -webkit-transition: opacity 0s ease-in-out;
-}
-.flip-cardD-front h3 {
-  padding: 40px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-.flip-cardD-back {
- 
-  background: -moz-radial-gradient(#919ed4 15%, transparent 16%),
-    -moz-radial-gradient(#919ed4 15%, transparent 16%), #99a5db;
-  background: -webkit-radial-gradient(#919ed4 15%, transparent 16%),
-    -webkit-radial-gradient(#919ed4 15%, transparent 16%), #99a5db;
-  background-position: 0 0, 80px 80px;
-
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
-
-  transform: rotateY(180deg);
-  display: table;
-}
-.flip-cardD-back p {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* POP-UP */
-.tooltip {
-  line-height: 1.5;
-  letter-spacing: 0.1em;
-  color: inherit;
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: 600;
-  margin: 0 0 1em 0;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  font-style: normal;
-
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  position: absolute;
-  top: 100%;
-  left: -60px;
-  width: 400px;
-  color: #ffffff;
-  background-color: #000033;
-  -webkit-box-shadow: inset -160px 30px 80px -30px rgba(13, 10, 41, 0.4);
-  -moz-box-shadow: inset -160px 30px 80px -30px rgba(13, 10, 41, 0.4);
-  box-shadow: inset -160px 30px 80px -30px rgba(13, 10, 41, 0.4);
-  padding: 5px;
-  z-index: 999998;
-  position: absolute;
-  text-align: center;
-  z-index: 1;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  font-weight: 400;
-  text-transform: none;
-
-}
-.popup {
-  margin: 50px;
-  padding: 50px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background: rgba(44, 48, 81, 0.9);
-  height: 90%;
-  overflow-y: auto;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-.popup:hover {
-  background: rgba(33, 36, 61, 1);
-}
-.popup p {
-  line-height: 1.5;
-}
-
-
 @media screen and (max-width: 736px) {
   h1 {
     font-size: 1.75em;
@@ -2855,8 +2711,6 @@ hr {
   background-color: rgba(67, 75, 86, 0.05);
 }
 
-
-
 /* Button */
 
 input[type="submit"],
@@ -3460,7 +3314,6 @@ input[type="radio"]:focus + label:before {
 .icon.major:hover:before {
   background: rgba(67, 75, 86, 0.05);
 }
-
 
 .icon.solid:before {
   font-weight: 900;
