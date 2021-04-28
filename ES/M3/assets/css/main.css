@@ -768,11 +768,7 @@ h6 {
 .progress1-bar {
   height: 18px;
   border-radius: 30px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.05)
-  );
+
   transition: 0.4s linear;
   transition-property: width, background-color;
 }
@@ -805,12 +801,7 @@ h6 {
 .progress2-bar {
   height: 18px;
   border-radius: 30px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.05)
-  );
-  transition: 0.4s linear;
+  tion: 0.4s linear;
   transition-property: width, background-color;
 }
 
@@ -842,11 +833,7 @@ h6 {
 .progress3-bar {
   height: 18px;
   border-radius: 30px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.05)
-  );
+
   transition: 0.4s linear;
   transition-property: width, background-color;
 }
