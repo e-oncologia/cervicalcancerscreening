@@ -1,9 +1,3 @@
-/*
-	Altitude by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
 var settings = {
 
 	slider: {
@@ -472,3 +466,5 @@ function muestra1() {
 	  x.style.display = "none";
 	}
   }
+
+  
