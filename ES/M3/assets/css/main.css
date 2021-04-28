@@ -376,7 +376,9 @@ h6 {
   opacity: 0.5;
   font-weight: 600;
 }
-
+.peque {
+  font-size: 0.8em;
+}
 .gordi {
   font-weight: 700;
 }
@@ -766,7 +768,7 @@ h6 {
 }
 
 .progress1-bar {
-  height: 18px;
+  height: 14px;
   border-radius: 30px;
 
   transition: 0.4s linear;
@@ -799,7 +801,7 @@ h6 {
 }
 
 .progress2-bar {
-  height: 18px;
+  height: 14px;
   border-radius: 30px;
   tion: 0.4s linear;
   transition-property: width, background-color;
@@ -831,7 +833,7 @@ h6 {
 }
 
 .progress3-bar {
-  height: 18px;
+  height: 14px;
   border-radius: 30px;
 
   transition: 0.4s linear;
