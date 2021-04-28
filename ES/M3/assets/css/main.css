@@ -691,7 +691,6 @@ h6 {
 }
 .flip-cardD:hover .flip-cardD-inner span {
   opacity: 0;
-  
 }
 .flip-cardD-front {
   position: absolute;
@@ -711,13 +710,13 @@ h6 {
 }
 .flip-cardD-front {
   background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-  -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-  -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-background-position: 0 0, 80px 80px;
--webkit-background-size: 20px 20px;
--moz-background-size: 20px 20px;
-background-size: 20px 20px;
+    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
+  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
+    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
+  background-position: 0 0, 80px 80px;
+  -webkit-background-size: 20px 20px;
+  -moz-background-size: 20px 20px;
+  background-size: 20px 20px;
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -735,7 +734,6 @@ background-size: 20px 20px;
   vertical-align: middle;
 }
 .flip-cardD-back {
- 
   background: -moz-radial-gradient(#919ed4 15%, transparent 16%),
     -moz-radial-gradient(#919ed4 15%, transparent 16%), #99a5db;
   background: -webkit-radial-gradient(#919ed4 15%, transparent 16%),
@@ -762,85 +760,113 @@ background-size: 20px 20px;
 .progress1 {
   padding: 6px;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.25);  
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
 }
 
 .progress1-bar {
   height: 18px;
   border-radius: 30px;
-  background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
 }
 
 .progress1-moved .progress1-bar {
-  width: 20%; 
-  background-color: #656dba;  
+  width: 15%;
+  background-color: #656dba;
   animation: progressAnimation1 2s;
 }
 
 @keyframes progressAnimation1 {
-  0%   { width: 5%; background-color: #F9BCCA;}
-  100% { width: 20%; background-color: #656dba; }
+  0% {
+    width: 5%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 15%;
+    background-color: #656dba;
+  }
 }
 
 .progress2 {
   padding: 6px;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.25);  
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
 }
 
 .progress2-bar {
   height: 18px;
   border-radius: 30px;
-  background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
 }
 
 .progress2-moved .progress2-bar {
-  width: 50%; 
-  background-color: #656dba;  
+  width: 45%;
+  background-color: #656dba;
   animation: progressAnimation2 3s;
 }
 
 @keyframes progressAnimation2 {
-  0%   { width: 5%; background-color: #F9BCCA;}
-  100% { width: 50%; background-color: #656dba; }
+  0% {
+    width: 15%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 45%;
+    background-color: #656dba;
+  }
 }
 
 .progress3 {
   padding: 6px;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.25);  
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
 }
 
 .progress3-bar {
   height: 18px;
   border-radius: 30px;
-  background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
 }
 
 .progress3-moved .progress3-bar {
-  width: 90%; 
-  background-color: #656dba;  
+  width: 85%;
+  background-color: #656dba;
   animation: progressAnimation3 4s;
 }
 
 @keyframes progressAnimation3 {
-  0%   { width: 5%; background-color: #F9BCCA;}
-  100% { width: 90%; background-color: #656dba; }
+  0% {
+    width: 45%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 85%;
+    background-color: #656dba;
+  }
 }
-
- 
 
 /* POP-UP */
 .tooltip {
@@ -855,7 +881,6 @@ background-size: 20px 20px;
   display: inline-block;
   cursor: pointer;
   font-style: normal;
-
 }
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -878,7 +903,6 @@ background-size: 20px 20px;
   visibility: visible;
   font-weight: 400;
   text-transform: none;
-
 }
 .popup {
   margin: 50px;
@@ -900,7 +924,6 @@ background-size: 20px 20px;
 .popup p {
   line-height: 1.5;
 }
-
 
 @media screen and (max-width: 736px) {
   h1 {
@@ -2943,8 +2966,6 @@ hr {
   background-color: rgba(67, 75, 86, 0.05);
 }
 
-
-
 /* Button */
 
 input[type="submit"],
@@ -3549,7 +3570,6 @@ input[type="radio"]:focus + label:before {
   background: rgba(67, 75, 86, 0.05);
 }
 
-
 .icon.solid:before {
   font-weight: 900;
 }
@@ -3974,8 +3994,6 @@ section.special,
 article.special {
   text-align: center;
 }
-
-
 
 header p {
   margin: -0.75em 0 3em 0;
