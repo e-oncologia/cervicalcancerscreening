@@ -867,6 +867,7 @@ h6 {
   display: inline-block;
   cursor: pointer;
   font-style: normal;
+  color: #fe7bfd;
 }
 .tooltip .tooltiptext {
   visibility: hidden;
