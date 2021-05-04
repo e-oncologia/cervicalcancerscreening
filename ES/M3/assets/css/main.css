@@ -393,6 +393,39 @@ h6 {
 .centrado {
   text-align: center;
 }
+.verticalcontenedor {
+  background-color: transparent;
+  width: 100%;
+  height: 150px;
+  perspective: 1000px;
+  margin: 0 0 1.5em 0;
+  border: 1px solid rgba(67, 75, 86, 0.25);
+}
+.verticalcentrado {
+  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
+    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
+  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
+    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
+  background-position: 0 0, 80px 80px;
+  -webkit-background-size: 20px 20px;
+  -moz-background-size: 20px 20px;
+  background-size: 20px 20px;
+
+  display: table;
+  position: absolute;
+  padding: 1em 1.5em;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.verticalcentrado p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .figuras {
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -407,18 +440,28 @@ h6 {
   animation: blink 2s linear infinite;
 }
 @keyframes blink {
-  0% {
+  25% {
     opacity: 1;
+    transform: scale(1);
   }
   30% {
     opacity: 0;
+    transform: scale(0.95);
   }
-  100% {
+  35% {
     opacity: 1;
+    transform: scale(1);
+  }
+  79% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.96);
   }
 }
 
-/* FLIP CARD A */
+/* FLIP CARD A 
 .flip-cardA {
   background-color: transparent;
   width: 100%;
@@ -503,7 +546,7 @@ h6 {
   vertical-align: middle;
 }
 
-/* FLIP CARD B */
+ FLIP CARD B 
 .flip-cardB {
   background-color: transparent;
   width: 100%;
@@ -587,7 +630,7 @@ h6 {
   vertical-align: middle;
 }
 
-/* FLIP CARD C */
+ FLIP CARD C
 .flip-cardC {
   background-color: transparent;
   width: 100%;
@@ -670,8 +713,9 @@ h6 {
   display: table-cell;
   vertical-align: middle;
 }
-
+*/
 /* FLIP CARD D */
+
 .flip-cardD {
   background-color: transparent;
   width: 100%;
@@ -690,9 +734,7 @@ h6 {
 .flip-cardD:hover .flip-cardD-inner {
   transform: rotateY(180deg);
 }
-.flip-cardD:hover .flip-cardD-inner span {
-  opacity: 0;
-}
+
 .flip-cardD-front {
   position: absolute;
   width: 100%;
@@ -722,12 +764,7 @@ h6 {
   display: table;
   margin: 0 auto;
 }
-.flip-cardD-front span {
-  opacity: 1;
-  transition: opacity 0s ease-in-out;
-  -moz-transition: opacity 0s ease-in-out;
-  -webkit-transition: opacity 0s ease-in-out;
-}
+
 .flip-cardD-front h3 {
   padding: 40px;
   text-align: center;
@@ -746,12 +783,10 @@ h6 {
   background-size: 20px 20px;
 
   transform: rotateY(180deg);
-  display: table;
 }
 .flip-cardD-back p {
-  display: table-cell;
-  vertical-align: middle;
 }
+
 /* PROGRESS BAR*/
 .container {
   margin-left: 100px;
@@ -875,15 +910,13 @@ h6 {
   top: 100%;
   left: -60px;
   width: 400px;
-  color: #ffffff;
-  background-color: #000033;
-  -webkit-box-shadow: inset -160px 30px 80px -30px rgba(13, 10, 41, 0.4);
-  -moz-box-shadow: inset -160px 30px 80px -30px rgba(13, 10, 41, 0.4);
-  box-shadow: inset -160px 30px 80px -30px rgba(13, 10, 41, 0.4);
+  color: #000033;
+  background-color: #fe7bfd;
+
   padding: 5px;
   z-index: 999998;
   position: absolute;
-  text-align: center;
+  text-align: left;
   z-index: 1;
 }
 .tooltip:hover .tooltiptext {
@@ -891,25 +924,38 @@ h6 {
   font-weight: 400;
   text-transform: none;
 }
-.popup {
-  margin: 50px;
-  padding: 50px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background: rgba(44, 48, 81, 0.9);
-  height: 90%;
-  overflow-y: auto;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+.glosario {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-style: normal;
+  color: #7183cd;
+  text-decoration: underline dashed 3px rgb(236, 236, 236);
 }
-.popup:hover {
-  background: rgba(33, 36, 61, 1);
-}
-.popup p {
+.glosario .glosaritext {
+  visibility: hidden;
+  position: absolute;
+  font-size: 10pt;
   line-height: 1.5;
+
+  top: 100%;
+  left: -60px;
+  width: 400px;
+  color: #ffffff;
+  padding: 1em;
+  background: #000033;
+  z-index: 999998;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+}
+.glosario:hover .glosaritext {
+  visibility: visible;
+  font-weight: 400;
+  text-transform: none;
 }
 
 @media screen and (max-width: 736px) {
@@ -3581,6 +3627,14 @@ input[type="radio"]:focus + label:before {
   color: #fe7bfd;
 }
 
+.icon.accent5 {
+  color: #ffffff;
+}
+.accent5.icon.major:before {
+  border-color: #fe7bfd;
+  background-color: #fe7bfd;
+}
+
 @media screen and (max-width: 736px) {
   .icon.major:before {
     font-size: 1.5em;
@@ -3600,9 +3654,14 @@ input[type="radio"]:focus + label:before {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
-  width: 70%;
+  width: 85%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media screen and (max-width: 980px) {
+  .grafico {
+    width: 100%;
+  }
 }
 
 /* Image */
@@ -4343,11 +4402,11 @@ table.alt tbody tr td {
 }
 
 .spotlights > article > :nth-child(1) {
-  width: 60%;
+  width: 50%;
 }
 
 .spotlights > article > :nth-child(2) {
-  width: 40%;
+  width: 50%;
 }
 
 .spotlights > article:nth-child(2n - 1) {
@@ -4358,11 +4417,11 @@ table.alt tbody tr td {
 }
 
 .spotlights > article:nth-child(2n - 1) > :nth-child(1) {
-  width: 40%;
+  width: 50%;
 }
 
 .spotlights > article:nth-child(2n - 1) > :nth-child(2) {
-  width: 60%;
+  width: 50%;
 }
 
 @media screen and (max-width: 1680px) {
