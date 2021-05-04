@@ -932,13 +932,12 @@ h6 {
   display: inline-block;
   cursor: pointer;
   font-style: normal;
-  color: #7183cd;
-  text-decoration: underline dashed 3px rgb(236, 236, 236);
+  color: #000033;
+  text-decoration: underline dashed 3px #fe7bfd;
 }
 .glosario .glosaritext {
   visibility: hidden;
   position: absolute;
-  font-size: 10pt;
   line-height: 1.5;
 
   top: 100%;
