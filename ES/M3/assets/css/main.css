@@ -789,8 +789,10 @@ h6 {
 
 /* PROGRESS BAR*/
 .container {
-  margin-left: 100px;
-  width: 200px;
+  position: absolute;
+  right: 30px;
+  width: 300px;
+  padding: 10px;
   text-align: center;
 }
 .progress0 {
@@ -5879,7 +5881,7 @@ table.alt tbody tr td {
   color: inherit;
 }
 
-#header > .logo {
+#header > .miga {
   -moz-flex-grow: 0;
   -webkit-flex-grow: 0;
   -ms-flex-grow: 0;
@@ -5896,7 +5898,7 @@ table.alt tbody tr td {
   vertical-align: middle;
 }
 
-#header > .logo span {
+#header > .miga span {
   border-left: solid 1px rgba(255, 255, 255, 0.25);
   color: rgba(255, 255, 255, 0.5);
   display: inline-block;
@@ -5905,6 +5907,30 @@ table.alt tbody tr td {
   padding-left: 0.825em;
   position: relative;
   top: -0.075em;
+}
+
+#header > .titulo {
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+#header > .titulo span {
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  font-size: 0.8em;
+  position: relative;
 }
 
 #header > nav {
@@ -5976,17 +6002,17 @@ table.alt tbody tr td {
     margin: 0 0 2em 0;
   }
 
-  #header > .logo span {
+  #header > .miga span {
     top: -0.05em;
   }
 }
 
 @media screen and (max-width: 736px) {
-  #header > .logo {
+  #header > .miga {
     font-size: 1em;
   }
 
-  #header > .logo span {
+  #header > .miga span {
     font-size: 1em;
     top: 0;
   }
@@ -6000,11 +6026,11 @@ table.alt tbody tr td {
     padding: 0 1.25em;
   }
 
-  #header > .logo {
+  #header > .miga {
     font-size: 0.8em;
   }
 
-  #header > .logo span {
+  #header > .miga span {
     display: none;
   }
 
