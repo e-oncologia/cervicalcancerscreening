@@ -404,11 +404,7 @@ h6 {
   border: 1px solid rgba(67, 75, 86, 0.25);
 }
 .verticalcentrado {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
+  background:  #f8f8f8;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
   background-size: 20px 20px;
@@ -765,10 +761,7 @@ h6 {
   backface-visibility: hidden;
 }
 .flip-cardD-front {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
+  background: #f8f8f8;
   background-position: 0 0, 80px 80px;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -785,10 +778,7 @@ h6 {
   vertical-align: middle;
 }
 .flip-cardD-back {
-  background: -moz-radial-gradient(#919ed4 15%, transparent 16%),
-    -moz-radial-gradient(#919ed4 15%, transparent 16%), #99a5db;
-  background: -webkit-radial-gradient(#919ed4 15%, transparent 16%),
-    -webkit-radial-gradient(#919ed4 15%, transparent 16%), #99a5db;
+  background:  #99a5db;
   background-position: 0 0, 80px 80px;
 
   -webkit-background-size: 20px 20px;
@@ -807,6 +797,7 @@ h6 {
   width: 300px;
   padding: 10px;
   text-align: center;
+  margin-top: 30px;
 }
 .progress0 {
   padding: 6px;
@@ -2579,11 +2570,8 @@ hr {
 .cajalinea {
   padding: 1.5em;
   margin-bottom: 0em;
-  background: -moz-radial-gradient(#f0f0f0 15%, transparent 16%),
-    -moz-radial-gradient(#f0f0f0 15%, transparent 16%), #f8f8f8;
-  background: -webkit-radial-gradient(#f0f0f0 15%, transparent 16%),
-    -webkit-radial-gradient(#f0f0f0 15%, transparent 16%), #f8f8f8;
-  background-position: 0 0, 80px 80px;
+  background: #f8f8f8;
+ 
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2607,10 +2595,7 @@ hr {
 .box2 {
   padding: 1em;
   color: #ffffff;
-  background: -moz-radial-gradient(#ff6c6c 15%, transparent 16%),
-    -moz-radial-gradient(#ff6c6c 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#ff6c6c 15%, transparent 16%),
-    -webkit-radial-gradient(#ff6c6c 15%, transparent 16%), #fe7bfd;
+  background:  #fe7bfd;
   background-position: 0 0, 80px 80px;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2727,10 +2712,7 @@ hr {
 
 .cajaA {
   padding: 1.5em;
-  background: -moz-radial-gradient(#fafafa 15%, transparent 16%),
-    -moz-radial-gradient(#fafafa 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#fafafa 15%, transparent 16%),
-    -webkit-radial-gradient(#fafafa 15%, transparent 16%), #ffffff;
+  background:  #f8f8f8;
   background-position: 0 0, 80px 80px;
 
   -webkit-background-size: 20px 20px;
@@ -2757,11 +2739,7 @@ hr {
 
 .cajaB {
   padding: 1.5em;
-  background: -moz-radial-gradient(#eeeeee 15%, transparent 16%),
-    -moz-radial-gradient(#eeeeee 15%, transparent 16%), #434b560d;
-  background: -webkit-radial-gradient(#eeeeee 15%, transparent 16%),
-    -webkit-radial-gradient(#eeeeee 15%, transparent 16%), #434b560d;
-  background-position: 0 0, 80px 80px;
+  background:  #434b560d;
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2795,11 +2773,7 @@ hr {
 .cajaC {
   padding: 1.5em;
   margin-bottom: 0em;
-  background: -moz-radial-gradient(#bdc8f5 15%, transparent 16%),
-    -moz-radial-gradient(#bdc8f5 15%, transparent 16%), #bfc8f0ef;
-  background: -webkit-radial-gradient(#bdc8f5 15%, transparent 16%),
-    -webkit-radial-gradient(#bdc8f5 15%, transparent 16%), #bfc8f0ef;
-  background-position: 0 0, 80px 80px;
+  background:  #bfc8f0ef;
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2843,11 +2817,7 @@ hr {
 .cajaD {
   padding: 1.5em;
   margin-bottom: 0em;
-  background: -moz-radial-gradient(#7183cd 15%, transparent 16%),
-    -moz-radial-gradient(#7183cd 15%, transparent 16%), #7183cdf8;
-  background: -webkit-radial-gradient(#7183cd 15%, transparent 16%),
-    -webkit-radial-gradient(#7183cd 15%, transparent 16%), #7183cdf8;
-  background-position: 0 0, 80px 80px;
+  background:  #7183cdf8;
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2883,11 +2853,7 @@ hr {
 .cajaE {
   padding: 1.5em;
   margin-bottom: 0em;
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
+  background:  #fe7bfd;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
   background-size: 20px 20px;
@@ -5897,6 +5863,7 @@ table.alt tbody tr td {
   font-size: 1.25em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  line-height: 50px;
 }
 
 #header > .miga span {
@@ -5910,6 +5877,13 @@ table.alt tbody tr td {
 }
 
 .depan:hover {
+  border: 1px solid #656dba;
+  background-color: #656dba;
+  color: #ffffff;
+}
+
+.depan1 {
+  padding: 5px;
   border: 1px solid #656dba;
   background-color: #656dba;
   color: #ffffff;

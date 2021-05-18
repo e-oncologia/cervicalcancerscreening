@@ -26,14 +26,8 @@
   backface-visibility: hidden;
 }
 .card1__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+ 
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -56,14 +50,9 @@
   backface-visibility: hidden;
 }
 .card1__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+ 
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -100,14 +89,8 @@
   backface-visibility: hidden;
 }
 .card2__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -130,14 +113,9 @@
   backface-visibility: hidden;
 }
 .card2__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -175,14 +153,8 @@
   backface-visibility: hidden;
 }
 .card3__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -205,14 +177,9 @@
   backface-visibility: hidden;
 }
 .card3__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+ 
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -250,14 +217,8 @@
   backface-visibility: hidden;
 }
 .card4__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -280,14 +241,9 @@
   backface-visibility: hidden;
 }
 .card4__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -325,14 +281,8 @@
   backface-visibility: hidden;
 }
 .card5__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -355,14 +305,9 @@
   backface-visibility: hidden;
 }
 .card5__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -400,14 +345,8 @@
   backface-visibility: hidden;
 }
 .card6__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -430,14 +369,8 @@
   backface-visibility: hidden;
 }
 .card6__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -475,14 +408,8 @@
   backface-visibility: hidden;
 }
 .card7__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -505,14 +432,9 @@
   backface-visibility: hidden;
 }
 .card7__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+  
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -550,14 +472,8 @@
   backface-visibility: hidden;
 }
 .card8__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -580,14 +496,9 @@
   backface-visibility: hidden;
 }
 .card8__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -625,14 +536,8 @@
   backface-visibility: hidden;
 }
 .card9__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -655,14 +560,8 @@
   backface-visibility: hidden;
 }
 .card9__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -700,14 +599,8 @@
   backface-visibility: hidden;
 }
 .card10__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -730,14 +623,8 @@
   backface-visibility: hidden;
 }
 .card10__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -775,14 +662,8 @@
   backface-visibility: hidden;
 }
 .card11__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -805,14 +686,8 @@
   backface-visibility: hidden;
 }
 .card11__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+  
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
@@ -850,14 +725,8 @@
   backface-visibility: hidden;
 }
 .card12__face--front {
-  background: -moz-radial-gradient(#f879f8 15%, transparent 16%),
-    -moz-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background: -webkit-radial-gradient(#f879f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f879f8 15%, transparent 16%), #fe7bfd;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background:  #fe7bfd;
+ 
   color: #000033;
   display: table;
   margin: 0 auto;
@@ -880,14 +749,8 @@
   backface-visibility: hidden;
 }
 .card12__face--back {
-  background: -moz-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -moz-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background: -webkit-radial-gradient(#f8f8f8 15%, transparent 16%),
-    -webkit-radial-gradient(#f8f8f8 15%, transparent 16%), #ffffff;
-  background-position: 0 0, 80px 80px;
-  -webkit-background-size: 20px 20px;
-  -moz-background-size: 20px 20px;
-  background-size: 20px 20px;
+  background: #f8f8f8;
+
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: table;
