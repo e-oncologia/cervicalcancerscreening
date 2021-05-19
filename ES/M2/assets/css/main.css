@@ -404,7 +404,7 @@ h6 {
   border: 1px solid rgba(67, 75, 86, 0.25);
 }
 .verticalcentrado {
-  background:  #f8f8f8;
+  background: #f8f8f8;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
   background-size: 20px 20px;
@@ -775,7 +775,7 @@ h6 {
   vertical-align: middle;
 }
 .flip-cardD-back {
-  background:  #99a5db;
+  background: #99a5db;
   background-position: 0 0, 80px 80px;
 
   -webkit-background-size: 20px 20px;
@@ -2568,7 +2568,6 @@ hr {
   padding: 1.5em;
   margin-bottom: 0em;
   background: #f8f8f8;
- 
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2592,7 +2591,7 @@ hr {
 .box2 {
   padding: 1em;
   color: #ffffff;
-  background:  #fe7bfd;
+  background: #fe7bfd;
   background-position: 0 0, 80px 80px;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2709,7 +2708,7 @@ hr {
 
 .cajaA {
   padding: 1.5em;
-  background:  #f8f8f8;
+  background: #f8f8f8;
   background-position: 0 0, 80px 80px;
 
   -webkit-background-size: 20px 20px;
@@ -2736,7 +2735,7 @@ hr {
 
 .cajaB {
   padding: 1.5em;
-  background:  #434b560d;
+  background: #434b560d;
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2770,7 +2769,7 @@ hr {
 .cajaC {
   padding: 1.5em;
   margin-bottom: 0em;
-  background:  #bfc8f0ef;
+  background: #bfc8f0ef;
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2814,7 +2813,7 @@ hr {
 .cajaD {
   padding: 1.5em;
   margin-bottom: 0em;
-  background:  #7183cdf8;
+  background: #7183cdf8;
 
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
@@ -2850,7 +2849,7 @@ hr {
 .cajaE {
   padding: 1.5em;
   margin-bottom: 0em;
-  background:  #fe7bfd;
+  background: #fe7bfd;
   -webkit-background-size: 20px 20px;
   -moz-background-size: 20px 20px;
   background-size: 20px 20px;
@@ -3775,6 +3774,7 @@ input[type="radio"]:focus + label:before {
     width: 100%;
   }
 }
+
 .grafico100 {
   display: block;
   margin-left: auto;
@@ -3783,6 +3783,19 @@ input[type="radio"]:focus + label:before {
   width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 980px) {
+  .video {
+    width: 100%;
+  }
 }
 /* Image */
 
