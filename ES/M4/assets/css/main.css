@@ -992,7 +992,27 @@ h6 {
   font-weight: 400;
   text-transform: none;
 }
-
+.glosario .glosaritext2 {
+  visibility: hidden;
+  position: absolute;
+  line-height: 1.5;
+  font-size: 0.9em;
+  top: 100%;
+  left: -60px;
+  width: 200px;
+  color: #ffffff;
+  padding: 1em;
+  background: #000033;
+  z-index: 999998;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+.glosario:hover .glosaritext2 {
+  visibility: visible;
+  font-weight: 400;
+  text-transform: none;
+}
 @media screen and (max-width: 736px) {
   h1 {
     font-size: 1.75em;
