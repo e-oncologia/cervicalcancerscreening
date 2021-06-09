@@ -98,12 +98,11 @@
         <p>
           Cuando se realiza una prueba, una persona puede clasificarse como positiva o negativa. Estos resultados se comparan con los resultados de una prueba de referencia («gold standard»), que es la prueba más fiable disponible para confirmar la enfermedad.</p>
        <!-- Blockquote -->
-  <h2>Ejemplo</h2>
   <blockquote>
-    En el caso del cáncer de cuello uterino, un resultado de cribado positivo suele ir seguido por la realización de una prueba de confirmación. Si ambas pruebas son positivas, se realizará una biopsia del cuello uterino, para saber cuál esel mejor tratamiento posible.</blockquote>
+    En el caso del cáncer de cuello uterino, un resultado de cribado positivo suele ir seguido por la realización de una prueba de confirmación. Si ambas pruebas son positivas, se realizará una biopsia del cuello uterino, para saber cuál es el mejor tratamiento posible.</blockquote>
   <br>
   <p>
-    Las medidas de validez de las pruebas diagnósticas indican la capacidad de las mismas para:
+    Las medidas de exactitud o validez (accuracy, en inglés) de las pruebas diagnósticas indican la capacidad de las mismas para:
   </p>
   <div class="table-wrapper">
     <table>
@@ -122,7 +121,7 @@
         <tr>
           <td>Predecir la enfermedad:</td>
           <td>
-            Estimación de la probabilidad de tener o de desarrollar la enfermedad tras un resultado positivo o negativo en la prueba.
+            Estimando la probabilidad de tener o de desarrollar la enfermedad tras un resultado positivo o negativo en la prueba.
           </td>
         </tr>
       </tbody>
@@ -134,43 +133,21 @@
     </table>
   </div>
 
-  <div class="row">
-    <div class="col-6 col-12-small">
       <p>Las medidas principales de validez de la prueba son:</p>
       <ul class="circulito">
         <li>Sensibilidad y especificidad.</li>
         <li>Valor predictivo positivo y negativo (VPP/VPN).</li>
         <li>Cocientes de probabilidad (CP) o <i>likelihood ratios</i>.</li>
-        <li>
-          El área bajo la curva (AUC) de la curva de las características operativas del receptor (ROC).
+        <li>El área bajo la curva (AUC) de la curva de las características operativas del receptor (ROC).
         </li>
         <li>Exactitud diagnóstica general.</li>
+        <li>Razón de verosimilitud entre cociente de probabilidad (CP) Y o likelihood ratios</li>
       </ul>
-    </div>
-    <div class="col-6 col-12-small">
+    <br><br>
       <p>
-        Los sujetos examinados, según los resultados de las pruebas y el estado de la enfermedad, se clasifican en cuatro grupos:
+        Los sujetos examinados, según los resultados de las pruebas y el estado de la enfermedad, se clasifican en cuatro grupos que pueden verse en la <span class="figuras">TABLA 1</span>:
       </p>
-      <ul class="circulito">
-        <li>Verdadero positivo (VP): personas enfermas detectadas a través de la prueba.</li>
-        <li>
-          Falso positivo (FP): sujetos sanos clasificados incorrectamente como enfermos por un resultado positivo en la prueba.
-        </li>
-        <li>
-          Falso negativo (FN): personas <b>no</b> detectadas por la prueba.
-        </li>
-        <li>
-          Verdadero negativo (VN): sujetos sanos correctamente clasificados a través de la prueba.
-        </li>
-      </ul>
-    </div>
-  </div>
-  <br />
-
-  <p>
-    Esta información se puede visualizar en la
-    <span class="figuras">TABLA 1</span>.
-  </p>
+    
   
   <div class="table-wrapper">
     <table>
@@ -192,13 +169,13 @@
         </tr>
         <tr>
           <td><b>Prueba Positiva</b></td>
-          <td>VP</td>
-          <td>FP</td>
+          <td>Verdadero positivo (<span class="figuras">VP</span>): personas enfermas detectadas a través de la prueba.</td>
+          <td>Falso positivo (<span class="figuras">FP</span>): sujetos sanos clasificados incorrectamente como enfermos por un resultado positivo en la prueba.</td>
         </tr>
         <tr>
-          <td><b>Prueba negativa</b></td>
-          <td>FN</td>
-          <td>VN</td>
+          <td><b>Prueba Negativa</b></td>
+          <td>Falso negativo (<span class="figuras">FN</span>): personas <b>no</b> detectadas por la prueba.</td>
+          <td>Verdadero negativo (<span class="figuras">VN</span>): sujetos sanos correctamente clasificados a través de la prueba.</td>
         </tr>
         
       </tbody>
@@ -362,7 +339,6 @@
         <br>
         <p>En este ejemplo, los cálculos se han expresado en proporciones pero habitualmente se expresan en porcentajes como se muestra en el texto de abajo. Ambos pueden usarse cuando hablemos de medidas de validez.</p>
         <p>Así pues, la prueba del VPH es superior porque identifica las 47 lesiones de alto grado como positivas, mientras que la citología pasa por alto 15 casos confirmados (100% frente a 68% de sensibilidad). Sin embargo, la prueba del VPH clasifica como positivas a 284 mujeres sin evidencia de lesión de alto grado, mientras que la citología lo hace en 104 mujeres y, por tanto, la especificidad (95% frente a 87%) es mayor para la citología.</p>
-        <p>Una prueba perfecta clasificaría a todas las mujeres como VP o VN (sensibilidad del 100% y especificidad del 100%). No obstante, las pruebas rara vez clasifican correctamente a todos los sujetos según su estado de enfermedad, ya que existe un solapamiento de la distribución de los pacientes con enfermedad con aquellos que no la tienen.</p>
       
          
       </div>
@@ -371,7 +347,8 @@
   <br />
   <br /><br />  <br />
   <br /><br />
-           
+  <p>Una prueba perfecta clasificaría a todas las mujeres como VP o VN (sensibilidad del 100% y especificidad del 100%). No obstante, las pruebas rara vez clasifican correctamente a todos los sujetos según su estado de enfermedad, ya que existe un solapamiento de la distribución de los pacientes con enfermedad con aquellos que no la tienen.</p>
+
          
   <h3 class="bgdestacado2">Valores predictivos</h3>
           <p>
@@ -383,7 +360,7 @@
           <ul class="circulito">
 
             <li>
-              El VPP mide la probabilidad de presencia de enfermedad cuando la prueba es positiva (proporción de pacientes con un resultado positivo en la prueba con un diagnóstico correcto). Valores bajos de VPP indican un número sustancial de pruebas posteriores innecesarias, un hecho que es importante de tener en cuenta en caso de que haya que realizar pruebas invasivas en sujetos con FP.<br /><b
+              El VPP mide la probabilidad de presencia de enfermedad cuando la prueba es positiva (proporción de pacientes con un resultado positivo en la prueba con un diagnóstico correcto). Valores bajos de VPP indican un número sustancial de pruebas posteriores innecesarias, un hecho que es importante de tener en cuenta en caso de que haya que realizar pruebas invasivas en sujetos con falsos positivos.<br /><b
                 >VPP = VP / (VP+FP)</b
               >
             </li>
@@ -515,24 +492,13 @@
             <div class="col-6 col-12-small">
             <h2>Ejemplo</h2>
             <blockquote>
-              La figura siguiente refleja los cambios en el valor predictivo de la citología en una población simulada de 10.000 mujeres, asumiendo el rendimiento de una prueba constante de un 70% de sensibilidad y de un 98% de especificidad. Estos datos simulados muestran cómo el VPP (línea azul) de la citología aumenta a medida que aumenta la prevalencia de las lesiones cervicales, pero el VPN (línea roja) <span class="tooltip">[12]<span class="tooltiptext">Franco EL, Mahmud SM, Tota J, Ferenczy A, Coutlée F. The expected impact of HPV vaccination on the accuracy of cervical cancer screening: the need for a paradigm change.</span></span>.
+              La figura siguiente refleja los cambios en el valor predictivo de la citología en una población simulada de 10.000 mujeres, asumiendo el rendimiento de una prueba constante de un 70% de sensibilidad y de un 98% de especificidad. Estos datos simulados muestran cómo el VPP (línea azul) de la citología aumenta a medida que aumenta la prevalencia de las lesiones cervicales, pero el VPN (línea roja) disminuye <span class="tooltip">[12]<span class="tooltiptext">Franco EL, Mahmud SM, Tota J, Ferenczy A, Coutlée F. The expected impact of HPV vaccination on the accuracy of cervical cancer screening: the need for a paradigm change.</span></span>.
             </blockquote>
           </div>
             <div class="col-6 col-12-small">
               
               <img class="grafico" src="images/02_C.png" alt="" />
-              <div class="row">
-                <div class="col-6 col-12-small centrado">
-                  <a href="images/02_C.png" download target="_blank" class="button">
-                   <span class="icon solid fa-download"></span>
-                  </a>
-                </div>
-                <div class="col-6 col-12-small centrado">
-                  <a href="images/02_C.png" target="_blank">
-                    <h4 class="button primary"><span class="icon solid fa-external-link-alt"></span></h4>
-                  </a>
-                </div>
-              </div>
+              
             </div>
             
           </div>
@@ -540,13 +506,29 @@
             <p>La sensibilidad y la especificidad se han considerado tradicionalmente como puntos de referencia constantes del rendimiento de las pruebas y se utilizan con frecuencia para comparar el valor diagnóstico de diferentes pruebas. Aun así, la sensibilidad y la especificidad también se ven afectadas por la prevalencia de la enfermedad <span class="tooltip">[11]<span class="tooltiptext">Brenner H, Gefeller O. Variation of sensitivity, specificity, likelihood ratios and predictive values with disease prevalence.</span></span>.
 
               </p><p> Cuando la prevalencia de la enfermedad sea muy baja, el VPP será sustancialmente bajo aunque la sensibilidad y la especificidad sean altas. Por lo tanto, muchas personas con un resultado positivo que no tienen la enfermedad (falsos positivos) serán sometidas innecesariamente a pruebas posteriores.</p>
-              <h2>Ejemplo</h2>
-              <blockquote>
+              <!-- IMPORTANTE -->
+         <hr />
+         <div class="row">
+           <div onclick="muestraOJO4()" class="col-2 col-12-small centrado">
+             <span
+               class="icon solid fa-exclamation major accent5 puntero blink"
+             ></span>
+           </div>
+
+           <div class="col-10 col-12-small">
+             <div id="OJO4" class="cajaB" style="display: block">
+               <p>
                 El primero de los 10 principios del cribado de Wilson y Jungner establece que una enfermedad para ser cribada debe de ser un problema de salud importante. El cribado de una enfermedad con una baja prevalencia es muy ineficaz incluso con una buena prueba de cribado.
-              </blockquote>
+              </p>
+              
+             </div>
+           </div>
+         </div>
+         <hr />
+              
+             
               <br>
-              <br>
-              <h3 class="bgdestacado2">Cocientes de probabilidad</h3>
+              <h3 class="bgdestacado2">Cocientes de probabilidad (CP), RAZÓN DE VEROSIMILITUD o <i>LIKELIHOOD RATIOS</i> (LR)</h3>
               <p>
                 A partir de la sensibilidad y la especificidad podemos obtener el CP, que resume cuántas veces más (o menos) es probable que los pacientes con la enfermedad obtengan un determinado resultado en comparación con los pacientes sin la enfermedad <span class="tooltip">[13]<span class="tooltiptext">Deeks JJ, Altman DG. Diagnostic tests 4: likelihood ratios.</span></span>.
               </p>
@@ -559,6 +541,7 @@
 
                   sujeto sano. Cuando el CP es inferior a 0,1, se considera que aporta pruebas suficientes para excluir el diagnóstico en la mayoría de las circunstancias. Cuanto más bajo es el CP-, más fuerte es la evidencia de la ausencia de enfermedad.<br><b>CP- = (1-Sensibilidad) / Especificidad</b></li>
                 </ul>
+                <br>
                 <p>Dado que la sensibilidad y la especificidad se utilizan para calcular el CP, tanto el CP+ como el CP- dependen de nuevo de la prevalencia de la enfermedad.</p>
                 <div class="caja">
                   <div class="cajaB">
@@ -664,12 +647,12 @@
          </div>
          <hr />
 <br>
-<h3 class="bgdestacado2">Pruebas de precisión utilizando datos cuantitativos</h3>
-<p>Muchas pruebas de diagnóstico son cuantitativas y es necesario establecer un punto de corte para distinguir entre el estado de buena salud y la enfermedad.</p>
+<h3>Pruebas de precisión utilizando datos cuantitativos</h3>
+<p>Muchas pruebas de diagnóstico son cuantitativas y es necesario establecer un punto de corte para distinguir entre el estado de buena salud y la enfermedad. Es decir, que para definir el resultado positivo o negativo de una prueba requiere establecer un criterio para determinar qué es un resultado positivo.</p>
              <!-- Blockquote -->
   <h2>Ejemplo</h2>
   <blockquote>
-    Definir el resultado positivo o negativo de una prueba requiere establecer un criterio para determinar qué es un resultado positivo. Por ejemplo, en el caso del diagnóstico de VPH, este puede ser una intensidad de señal particular en el ensayo de VPH medida por una determinada técnica o un conjunto específico de anomalías citológicas en citología.</blockquote>
+   En el caso del diagnóstico de VPH, este puede ser una intensidad de señal particular en el ensayo de VPH medida por una determinada técnica o un conjunto específico de anomalías citológicas en citología.</blockquote>
   <br>
   <p>Idealmente, debido a que una prueba de detección debe tener una alta sensibilidad y especificidad, el valor de corte debe distinguir claramente a las personas que tienen la enfermedad (resultado positivo de la prueba) de las que no tienen la enfermedad (resultado negativo de la prueba) (<span class="figuras">FIGURA 2A</span>). Sin embargo, la realidad no es ideal y suele haber cierta superposición entre sujetos sanos con valores altos y sujetos con la enfermedad y valores bajos (<span class="figuras">FIGURA 2B</span>).</p>
   <br />
@@ -678,39 +661,17 @@
     Valores de corte para definir el resultado positivo y negativo de un test cuantitativo.
   </h4>
   <img class="grafico" src="images/02_D.png" alt="" />
-  <div class="row">
-    <div class="col-6 col-12-small centrado">
-      <a href="images/02_D.png" download target="_blank" class="button">
-       <span class="icon solid fa-download"></span>
-      </a>
-    </div>
-    <div class="col-6 col-12-small centrado">
-      <a href="images/02_D.png" target="_blank">
-        <h4 class="button primary"><span class="icon solid fa-external-link-alt"></span></h4>
-      </a>
-    </div>
-  </div>
+  
   <br />
 <p>Generalmente, cuando la sensibilidad aumenta, la especificidad disminuye y viceversa. En la Figura 3, si elegimos el punto de corte A (100% de sensibilidad), detectaremos a todos los pacientes con una
 
-  enfermedad, pero la mitad de los pacientes sin enfermedad serán derivados para la realización de pruebas innecesarias. Lo contrario ocurre en el punto de corte B: al evitar enviar sujetos sin enfermedad para pruebas innecesarias (100% de especificidad), la mitad de los pacientes con enfermedad no serian diagnosticados.</p>
+  enfermedad, pero la mitad de los pacientes sin enfermedad serán derivados para la realización de pruebas innecesarias. Lo contrario ocurre en el punto de corte B: al evitar enviar sujetos sin enfermedad para pruebas innecesarias (100% de especificidad), la mitad de los pacientes con enfermedad no serían diagnosticados.</p>
   <h4>
     <span class="bgazul">&nbsp;FIGURA 3&nbsp;</span>
     Distribución de la salud y enfermedad de acuerdo con el valor de corte diagnóstico establecido y los efectos subyacentes en la sensibilidad y especificidad.
   </h4>
   <img class="grafico" src="images/02_I.png" alt="" />
-  <div class="row">
-    <div class="col-6 col-12-small centrado">
-      <a href="images/02_I.png" download target="_blank" class="button">
-       <span class="icon solid fa-download"></span>
-      </a>
-    </div>
-    <div class="col-6 col-12-small centrado">
-      <a href="images/02_I.png" target="_blank">
-        <h4 class="button primary"><span class="icon solid fa-external-link-alt"></span></h4>
-      </a>
-    </div>
-  </div>
+ 
   <br />
   
   <br>
@@ -738,13 +699,18 @@
            </div>
            <hr />
 
-           <h3 class="bgdestacado2">La curva de características operativas del receptor (ROC)</h3>
+           <h3 class="bgdestacado2">Curva Característica Operativa del Receptor (ROC)</h3>
            <p>La curva ROC es la representación de todos los pares de valores de sensibilidad y especificidad para todos los puntos de corte que se han podido establecer en la prueba evaluada.
 
            </p>
            <div class="row">
            <div class="col-6 col-12-small">
-             <p>En la curva ROC, el eje x representa 1-especificidad (la tasa de falsos positivos) mientras que el eje y representa la sensibilidad (tasa de verdaderos positivos) (<span class="figuras">Figura 4</span>). La forma de la curva ROC, así como el área bajo la curva (AUC), permiten estimar la potencia discriminatoria de una prueba: cuanto más cerca esté la curva de la esquina superior izquierda (mayor sensibilidad y especificidad), mayor será el AUC y, por tanto, mejor sería la prueba para discriminar entre la salud y la enfermedad. Un AUC de 1 representa la prueba perfecta, con una sensibilidad del 100 % y una especificidad del 100 %. Un AUC de 0,5 significa que la prueba no es útil dado que no permite la discriminación, por ejemplo: una prueba que independientemente del valor de corte muestres que la suma de la sensibilidad más la de la especificidad es igual a 1 (sensibilidad 10% y especificidad 90% o no, sensibilidad 70% y especificidad 30% o no, etc.).</p>
+             <p>En la curva ROC, el eje x representa 1-especificidad (la tasa de falsos positivos) mientras que el eje y representa la sensibilidad (tasa de verdaderos positivos) (<span class="figuras">Figura 4</span>).</p>
+              <p>La forma de la curva ROC, así como el área bajo la curva (AUC), permiten estimar la potencia discriminatoria de una prueba: cuanto más cerca esté la curva de la esquina superior izquierda (mayor sensibilidad y especificidad), mayor será el AUC y, por tanto, mejor sería la prueba para discriminar entre la salud y la enfermedad:</p>
+              <ul class="circulito">
+                <li>Un AUC de 1 representa la prueba perfecta, con una sensibilidad del 100 % y una especificidad del 100%.</li>
+                <li>Un AUC de 0,5 significa que la prueba no es útil dado que no permite la discriminación puesto que independientemente del punto de corte la suma de la sensibilidad más la especificidad es igual a 1 (sensibilidad 10% y especificidad 90%, sensibilidad 70% y especificidad 30%, etc.).</li>
+              </ul>
            </div>
            <div class="col-6 col-12-small">
              <h4>
@@ -752,18 +718,7 @@
             Ejemplo de curvas ROC y AUC.
           </h4><img class="grafico100" src="images/02_E.png" alt="" />
             
-            <div class="row">
-              <div class="col-6 col-12-small centrado">
-                <a href="images/02_I.png" download target="_blank" class="button">
-                 <span class="icon solid fa-download"></span>
-                </a>
-              </div>
-              <div class="col-6 col-12-small centrado">
-                <a href="images/02_I.png" target="_blank">
-                  <h4 class="button primary"><span class="icon solid fa-external-link-alt"></span></h4>
-                </a>
-              </div>
-            </div>
+         
             <br />
           </div>
 
@@ -774,17 +729,15 @@
             <div class="col-6 col-12-small">
               <h2>Ejemplo</h2>
               <blockquote>
-                La siguiente figura muestra la curva ROC y la estimación del AUC para la citología líquida cuando se utilizan diferentes grados de gravedad de las lesiones como punto de corte para definir la anormalidad <span class="tooltip">[15]<span class="tooltiptext">Hu L, Bell D, Antani S, Xue Z, Yu K, Horning MP, et al. An Observational Study of Deep Learning and Automated Evaluation of Cervical Images for Cancer Screening.</span></span>.</blockquote>
+                La siguiente figura muestra la curva ROC y la estimación del AUC para la citología líquida cuando se utilizan diferentes grados de gravedad de las lesiones como punto de corte para definir la anormalidad <span class="tooltip">[15]<span class="tooltiptext">Hu L, Bell D, Antani S, Xue Z, Yu K, Horning MP, et al. An Observational Study of Deep Learning and Automated Evaluation of Cervical Images for Cancer Screening.</span></span>.<br><br>Como cabía esperar, al aumentar la gravedad de las lesiones la especificidad mejora, pero la sensibilidad disminuye.</blockquote>
               <br>
             </div>
             <div class="col-6 col-12-small">
               <img class="grafico100" src="images/02_F.jpg" alt="" />
-                <p>LSIL = Lesión intraepitelial escamosa de alto grado</p>
-                <p>HSIL = Lesión intraepitelial escamosa de alto grado</p>
-                <p>ASC-US = Células escamosas atípicas de importancia indeterminada</p>
+               
               </div></div>
 <br>
- <p>Como cabía esperar, al aumentar la gravedad de las lesiones la especificidad mejora, pero la sensibilidad disminuye.</p>
+ <p></p>
  <!-- IMPORTANTE -->
  <hr />
  <div class="row">
@@ -797,7 +750,7 @@
    <div class="col-10 col-12-small">
      <div id="OJO3" class="cajaB" style="display: block">
        <p>
-        Para una prueba de detección de primera línea, se prioriza una alta sensibilidad frente a una alta especificidad con el objetivo de minimizar el número de falsos negativos. Para disminuir las derivaciones innecesarias para el diagnóstico y/o tratamiento (falsos positivos) en poblaciones examinadas con una prueba primaria con especificidad limitada, las personas que dan un resultado positivo en la primera prueba se vuelven a testar, esta vez, con una prueba más específica. Este paso se llama TRIAGE y puede estar integrado dentro de la prueba primaria en sí (la prueba primaria no sólo proporciona un resultado positivo frente a negativo, sino que permite estratificar aún más aquellos con un resultado positivo, como la prueba del VPH que proporciona datos de genotipado).</p>
+        Para una prueba de detección de primera línea, se prioriza una alta sensibilidad frente a una alta especificidad con el objetivo de minimizar el número de falsos negativos. Para disminuir las derivaciones innecesarias para el diagnóstico y/o tratamiento (falsos positivos) en poblaciones examinadas con una prueba primaria con especificidad limitada, las personas que dan un resultado positivo en la primera prueba se vuelven a testar, esta vez, con una prueba más específica. Este paso se llama TRIAJE y puede estar integrado dentro de la prueba primaria en sí (la prueba primaria no sólo proporciona un resultado positivo frente a negativo, sino que permite estratificar aún más aquellos con un resultado positivo, como la prueba del VPH que proporciona datos de genotipado).</p>
      </div>
    </div>
  </div>
