@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>BCNscreening</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/flipcard.css" />
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Wrapper -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <span class="miga"
+              ><a href="index.html"
+                ><span class="depan">MÓDULO 4B</span>&nbsp;</a
+              ><span
+                ><a href="M4B1_1.html"
+                  ><i class="arrow right"></i>&nbsp;&nbsp;<span class="depan1"
+                    >4 DEEP LEARNING</span
+                  ></a
+                >&nbsp;<a href="M4B4_1.html"
+                  ><i class="arrow right"></i>&nbsp;<span class="depan"
+                    >&nbsp;1&nbsp;</span
+                  ></a
+                >&nbsp;<a href="M4B4_2.html"
+                  >&nbsp;<span class="depan">&nbsp;2&nbsp;</span></a
+                >&nbsp;<a href="M4B4_3.html"
+                  >&nbsp;<span class="depan1">&nbsp;3&nbsp;</span></a
+                >&nbsp;<a href="M4B4_4.html"
+                  >&nbsp;<span class="depan">&nbsp;4&nbsp;</span></a
+                ></span
+              ></span
+            >
+
+            <nav>
+              <ul>
+                <li><a href="#menu"></a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <!-- Nav -->
+
+          <nav id="menu">
+            <h4>ÍNDICE</h4>
+            <ul class="links">
+              <li><a href="M4B1_1.html">&nbsp;Unidad 1</a></li>
+              <li><a href="M4B2_1.html">&nbsp;Unidad 2</a></li>
+              <li><a href="M4B3_1.html">&nbsp;Unidad 3</a></li>
+              <li><a href="M4B4_1.html">&nbsp;Unidad 4</a></li>
+              <li><a href="M4B5_1.html">&nbsp;Unidad 5</a></li>
+            </ul>
+            <h4>RECURSOS</h4>
+            <ul class="links">
+              <li><a href="M4Bsummary.html">&nbsp;Resumen</a></li>
+              <li><a href="M4Bbiblio.html">&nbsp;Bibliografía</a></li>
+              <li><a href="M4Bglossary.html">&nbsp;Glosario</a></li>
+              <li>
+                <a href="docs/PDF_04B.pdf" target="_blank"
+                  >&nbsp;Contenido en PDF</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Wrapper -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Main -->
+          <section class="main">
+            <header class="major">
+              <h1 class="gris">DEEP LEARNING / INTELIGENCIA ARTIFICIAL</h1>
+            </header>
+          </section>
+          <!-- nuevo apartado -->
+
+          <section class="main accent2">
+            <h2>
+              4.3 Ejemplo práctico de aprendizaje automático en el diagnóstico
+              de imágenes de cuello uterino
+            </h2>
+          </section>
+
+          <section class="main">
+            <p>
+              En un gran estudio sobre la historia natural de la carcinogénesis
+              cervical en Guanacaste, Costa Rica, Hu et al (2019), se analizaron
+              imágenes de cuello uterino (cervigramas) mediante una técnica de
+              Deep Learning llamada evaluación visual automatizada (EVA)
+              <span class="tooltip"
+                >[87]<span class="tooltiptext"
+                  >L. Hu et al., «An Observational Study of Deep Learning and
+                  Automated Evaluation of Cervical Images for Cancer Screening»,
+                  Journal of the National Cancer Institute, vol. 11, núm. 9, p.
+                  923-932, gen. 2019.</span
+                ></span
+              >. La Figura 3 describe el proceso mediante el cual un algoritmo
+              de aprendizaje automático supervisado fue entrenado y supervisado.
+            </p>
+            <h4>
+              <span class="bgazul">&nbsp;FIGURA 3&nbsp;</span>
+              Entrenamiento de un modelo de Deep Learning supervisado.
+              <span class="tooltip"
+                >[87]<span class="tooltiptext"
+                  >L. Hu et al., «An Observational Study of Deep Learning and
+                  Automated Evaluation of Cervical Images for Cancer Screening»,
+                  Journal of the National Cancer Institute, vol. 11, núm. 9, p.
+                  923-932, gen. 2019.</span
+                ></span
+              >
+            </h4>
+            <img class="grafico" src="images/04B_F.jpg" alt="" />
+            <br />
+            <div class="row">
+              <div class="col-6 col-12-small">
+                <p>
+                  En resumen, el modelo se entrenó utilizando el 70% de las
+                  imágenes de estudio, utilizando como datos de campo de
+                  referencia la evaluación histológica de cada caso. Cada caso
+                  definido como CIN2+ se emparejó con un control ( < CIN2).
+                  Posteriormente, el algoritmo resultante se probó con el 30%
+                  restante de imágenes para verificar su rendimiento. Para cada
+                  imagen, había una puntuación (que variaba de 0,0 a 1,0) que
+                  predecía la probabilidad de que la imagen fuera CIN2+. El
+                  rendimiento del algoritmo se evaluó comparando la sensibilidad
+                  y la 1-especificidad de las mediciones y se trazó como el área
+                  bajo la curva (AUC) (<span class="figuras">Figura 4</span>).
+                  EVA fue el mejor método para predecir las lesiones
+                  precancerosas en comparación con otros enfoques estándar, como
+                  la prueba del VPH, la citología o la lectura experta de
+                  cervigramas.
+                </p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h4>
+                  <span class="bgazul">&nbsp;FIGURA 4&nbsp;</span>
+                  AUC para predecir lesiones precancerosas mediante EVA en
+                  comparación con otros métodos.
+                  <span class="tooltip"
+                    >[87]<span class="tooltiptext"
+                      >L. Hu et al., «An Observational Study of Deep Learning
+                      and Automated Evaluation of Cervical Images for Cancer
+                      Screening», Journal of the National Cancer Institute, vol.
+                      11, núm. 9, p. 923-932, gen. 2019.</span
+                    ></span
+                  >
+                </h4>
+                <img class="grafico100" src="images/04B_H.png" alt="" />
+              </div>
+            </div>
+            <br />
+            <p>
+              La investigación en curso tiene como objetivo obtener el nivel de
+              precisión notificado por Hu et al. cuando se utilizan dispositivos
+              distintos a los cervigramas en la colposcopia
+              <span class="tooltip"
+                >[88]<span class="tooltiptext"
+                  >Z. Xue et al., «A demonstration of automated visual
+                  evaluation (AVE) of cervical images taken with a smartphone
+                  camera», International Journal of Cancer, p. ijc.33029, abr.
+                  2020.</span
+                ></span
+              >, incluidos los métodos de menor coste, como cámaras digitales o
+              smartphones
+              <span class="tooltip"
+                >[89]<span class="tooltiptext"
+                  >K. T. Desai et al., «Design and feasibility of a novel
+                  program of cervical screening in Nigeria: self-sampled HPV
+                  testing paired with visual triage», Infectious Agents and
+                  Cancer (submitted), 2020.</span
+                ></span
+              >.
+            </p>
+          </section>
+        </div>
+      </div>
+      <!-- Paginador -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Main -->
+          <section class="main accent3">
+            <header class="major">
+              <h3 class="alaizquierda">
+                <a href="M4B4_2.html" class="button primary"
+                  ><span class="icon solid fa-arrow-left"></span> Anterior</a
+                >
+              </h3>
+              <h3 class="aladerecha">
+                <a href="M4B4_4.html" class="button primary"
+                  >Siguiente <span class="icon solid fa-arrow-right"></span
+                ></a>
+              </h3>
+              <br />
+              <br />
+            </header>
+          </section>
+        </div>
+      </div>
+
+      <!-- Wrapper -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Footer -->
+          <footer id="footer">
+            <div class="image">
+              <a href="https://www.e-oncologia.org/" target="_blank"
+                ><img src="images/logos.png" alt="" data-position=""
+              /></a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/counter.js"></script>
+  </body>
+</html>
