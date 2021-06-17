@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>BCNscreening</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/flipcard.css" />
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Wrapper -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <span class="miga"
+              ><a href="index.html"
+                ><span class="depan">MÓDULO 4A</span>&nbsp;</a
+              ><span
+                ><a href="M4A2_1.html"
+                  ><i class="arrow right"></i>&nbsp;&nbsp;<span class="depan1"
+                  >2 Una única prueba</span
+                  ></a
+                >&nbsp;<a href="M4A2_1.html"
+                  ><i class="arrow right"></i>&nbsp;<span class="depan1"
+                    >&nbsp;1&nbsp;</span
+                  ></a
+                >&nbsp;<a href="M4A2_2.html"
+                  >&nbsp;<span class="depan">&nbsp;2&nbsp;</span></a
+                >&nbsp;<a href="M4A2_3.html"
+                  >&nbsp;<span class="depan">&nbsp;3&nbsp;</span></a
+                ></span
+              ></span
+            >
+
+            <nav>
+              <ul>
+                <li><a href="#menu"></a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <!-- Nav -->
+
+          <nav id="menu">
+            <h4>ÍNDICE</h4>
+            <ul class="links">
+              <li><a href="M4A1_1.html">&nbsp;Unidad 1</a></li>
+              <li><a href="M4A2_1.html">&nbsp;Unidad 2</a></li>
+              <li><a href="M4A3_1.html">&nbsp;Unidad 3</a></li>
+              <li><a href="M4A4_1.html">&nbsp;Unidad 4</a></li>
+              <li><a href="M4A5_1.html">&nbsp;Unidad 5</a></li>
+              <li><a href="M4A6_1.html">&nbsp;Unidad 6</a></li>
+              <li><a href="M4A7_1.html">&nbsp;Unidad 7</a></li>
+            </ul>
+            <h4>RECURSOS</h4>
+            <ul class="links">
+              <li><a href="M4Asummary.html">&nbsp;Resumen</a></li>
+              <li><a href="M4Abiblio.html">&nbsp;Bibliografía</a></li>
+              <li><a href="M4Aglossary.html">&nbsp;Glosario</a></li>
+              <li>
+                <a href="docs/PDF_04A.pdf" target="_blank"
+                  >&nbsp;Contenido en PDF</a
+                >
+              </li>
+            </ul>
+          </nav>
+ 
+      <!-- Wrapper -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Main -->
+          <section class="main">
+            <header class="major">
+              <h1 class="gris">
+                Validez diagnóstica de las estrategias de triaje en mujeres VPH positivas con una única prueba
+              </h1>
+            </header>
+            <br>
+            <p class="centrado">Los métodos de triaje pueden dividirse en tres grandes grupos:</p>
+            <div class="featuresA">
+              <section>
+                <h4>Pruebas morfológicas</h4>
+
+                <h4 class="boton blink blanco" onclick="muestra1()">1</h4>
+              </section>
+              <section>
+                <h4>Pruebas moleculares</h4>
+
+                <h4 class="boton blink" onclick="muestra2()">2</h4>
+              </section>
+              <section>
+                <h4>Pruebas de inspección visual</h4>
+                <h4 class="boton blink" onclick="muestra3()">3</h4>
+              </section>
+            </div>
+            <div id="myDIV1" style="display: none">
+              <div class="cajaB">
+                <p>Estas pruebas se basan en la observación de cambios morfológicos a nivel celular, por lo que es necesario el uso de un microscopio y su interpretación depende del observador. Incluyen el uso de la citología y la tinción de p16 y/o Ki-67. Los nuevos enfoques apuntan a la introducción de la lectura automática de las láminas mediante programas basados en la inteligencia artificial con el fin de eliminar esta subjetividad.</p>
+               
+              </div>
+            </div>
+            <div id="myDIV2" style="display: none">
+              <div class="cajaB">
+                <p>Se trata de pruebas objetivas basadas en la presencia o cuantificación de componentes víricos o cambios moleculares causados por el VPH. Incluyen pruebas de ADN y ARN del VPH, genotipado, carga vírica, marcadores proteicos (oncoproteínas E6 y/o E7) y metilación.</p>
+               
+              </div>
+            </div>
+            <div id="myDIV3" style="display: none">
+              <div class="cajaB">
+                <p>Estas pruebas implican la observación directa del cuello uterino con la ayuda de lentes de aumento o a simple vista. Incluyen el uso de la inspección visual con ácido acético (IVAA, VIA en inglés) o con solución de Lugol (IVSL, VILI en inglés). La colposcopia es también una técnica visual, aunque dadas sus características e importancia, se describe en un módulo aparte.</p>
+               
+              </div>
+            </div>
+
+             <!-- IMPORTANTE -->
+    <hr>
+    <div class="row">
+     
+        <div onclick="muestraOJO1()" class="col-2 col-12-small centrado">
+          <span class="icon solid fa-exclamation major accent5 puntero blink"></span>
+        </div>
+     
+      <div class="col-10 col-12-small">
+        <div id="OJO1" class="cajaB" style="display:block;" >
+          <p>Un rápido recordatorio de la interpretación de los parámetros de las pruebas. La sensibilidad mide la capacidad de la prueba para identificar correctamente a las mujeres con la enfermedad; la especificidad mide su capacidad para identificar a las que no tienen la enfermedad; el valor predictivo positivo (VPP) mide la proporción de mujeres con un resultado positivo que realmente tienen la enfermedad; y el valor predictivo negativo (VPN) mide la proporción de mujeres con un resultado negativo que realmente no tienen la enfermedad.</p>
+      </div>
+    </div> 
+    </div>    
+    <hr>
+          </section>
+          <!-- nuevo apartado -->
+
+          <section class="main accent2">
+            <h2>
+              2.1 Citología
+            </h2>
+          </section>
+
+          <section class="main">
+            <p>La citología es una de las opciones de triaje más utilizadas en las mujeres positivas al VPH por varias razones:</p>
+            <div class="row">
+              <div class="col-4 col-12-small">
+                <div class="scene1 scene1--card1">
+                  <div class="card1">
+                    <div class="card1__face card1__face--front">
+                      <h1>
+                        <span class="icon solid fa-sync-alt blanco"></span>
+                      </h1>
+                    </div>
+                    <div class="card1__face card1__face--back">
+                      <p class="centrado">Tiene una elevada especificidad.</p>                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-12-small">
+                <div class="scene2 scene2--card2">
+                  <div class="card2">
+                    <div class="card2__face card2__face--front">
+                      <h1>
+                        <span class="icon solid fa-sync-alt blanco"></span>
+                      </h1>
+                    </div>
+                    <div class="card2__face card2__face--back">
+                      <p class="centrado">Puede realizarse de forma refleja en muestras conservadas en medio líquido.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-12-small">
+                <div class="scene3 scene3--card3">
+                  <div class="card3">
+                    <div class="card3__face card3__face--front">
+                      <h1>
+                        <span class="icon solid fa-sync-alt blanco"></span>
+                      </h1>
+                    </div>
+                    <div class="card3__face card3__face--back">
+                      <p class="centrado">Permite el reciclaje de citólogos/técnicos en países o regiones donde existe un programa previo basado en la citología con un control de calidad adecuado.</p>                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <br>
+            <p>Para más información sobre las características de la citología, consultar el <span class="figuras">módulo 3</span>.</p>
+            <h4>
+              <span class="bgazul">&nbsp;FIGURA 1&nbsp;</span>
+              Posible algoritmo de manejo clínico de mujeres VPH positivas con citología
+            </h4>
+            <img class="grafico" src="images/4A_01.jpg" alt="" />
+            <p>En el metaanálisis de Arbyn et al. 2020, el uso de citología réflex con un valor de corte en ASC-US+ se tradujo en una tasa de derivación del 33% entre las mujeres positivas al VPH, es decir, que fueron derivadas a colposcopia o a otras pruebas de acuerdo con las recomendaciones existentes. La sensibilidad y la especificidad agrupadas o pooled para la detección de CIN2+ fueron del 71,5% y del 74,7%, respectivamente. Para detectar CIN3+, la sensibilidad y la especificidad agrupadas fueron del 77,5% y del 72,7%, respectivamente. 
+
+            </p><p>El rendimiento de la citología como prueba de triaje en las mujeres positivas al VPH varía en función <b>de si los citólogos conocen o no el resultado del VPH</b> [7]. En el grupo en el que los citólogos conocían el resultado del VPH, la sensibilidad para detectar CIN2+ fue mayor (81,0% frente a 66,1%) y la especificidad fue menor (60,3% frente a 80,3%) en comparación con el grupo en el que los citólogos no lo conocían. En el caso de CIN3+, las diferencias según si el citólogo conocía o no el estado del VPH fueron menores y no significativas.
+              
+            </p><p>No existen diferencias significativas en la validez diagnóstica para detectar CIN2+ o CIN3+ entre el uso de la <b>citología convencional</b> y los métodos de <b>citología líquida</b> utilizados en el triaje de mujeres VPH+ cuando se utilizó ASC-US+ para definir la anormalidad de la citología. 
+              </p>
+        <!-- IMPORTANTE -->
+        <hr>
+        <div class="row">
+         
+            <div onclick="muestraOJO2()" class="col-2 col-12-small centrado">
+              <span class="icon solid fa-exclamation major accent5 puntero blink"></span>
+            </div>
+         
+          <div class="col-10 col-12-small">
+            <div id="OJO2" class="cajaB" style="display:block;" >
+              <p>El triaje mediante citología requiere de personal cualificado y un control de calidad continuo para que su rendimiento sea óptimo. Esto es posible en los países de renta alta que cuentan con la infraestructura adecuada, pero incluso en este contexto, el paso al cribado primario del VPH supondrá una reducción considerable de la carga de trabajo global de la citología. En la era del cribado primario basado en la prueba del VPH, puede resultar difícil contratar, formar y conservar al personal encargado de las citologías, por lo que es necesario realizar todos los esfuerzos posibles para no disminuir la validez de la prueba.</p>
+          </div>
+        </div> 
+        </div>    
+      
+
+          </section>
+          <!-- nuevo apartado -->
+
+          
+        </div>
+      </div>
+      <!-- Paginador -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Main -->
+          <section class="main accent3">
+            <header class="major">
+              <h3 class="alaizquierda">
+                <a href="M4A1_1.html" class="button primary"
+                  ><span class="icon solid fa-arrow-left"></span> Anterior</a
+                >
+              </h3>
+              <h3 class="aladerecha">
+                <a href="M4A2_2.html" class="button primary"
+                  >Siguiente <span class="icon solid fa-arrow-right"></span
+                ></a>
+              </h3>
+              <br />
+              <br />
+            </header>
+          </section>
+        </div>
+      </div>
+
+      <!-- Wrapper -->
+      <div class="wrapper">
+        <div class="inner">
+          <!-- Footer -->
+          <footer id="footer">
+            <div class="image">
+              <a href="https://www.e-oncologia.org/" target="_blank"
+              ><img src="../images/logos.png" alt="" data-position=""
+              /></a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/counter.js"></script>
+  </body>
+</html>
