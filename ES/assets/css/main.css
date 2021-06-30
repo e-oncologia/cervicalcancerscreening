@@ -363,6 +363,21 @@ h6 {
 .azul {
   color: #000033;
 }
+.tablaRojo {
+  background-color: #f14144;
+}
+.tablaNaranja {
+  background-color: #ffb741;
+}
+.tablaAmarillo {
+  background-color: rgb(255, 208, 0, 0.5);
+}
+.tablaVerde {
+  background-color: #7af37d;
+}
+.tablaAzul {
+  background-color: #4d85e9;
+}
 .bgdestacado {
   font-weight: 600;
   color: #000033;
@@ -400,6 +415,9 @@ h6 {
 }
 .centrado {
   text-align: center;
+}
+.interlineado {
+  line-height: 3.6em;
 }
 .verticalcontenedor {
   background-color: transparent;
@@ -713,6 +731,10 @@ h6 {
   font-weight: 400;
   text-transform: none;
 }
+.cajaC .tooltip {
+  color: #ffffff;
+}
+
 .glosario {
   color: inherit;
   text-decoration: none;
@@ -2679,7 +2701,25 @@ hr {
 #myDIV1,
 #myDIV2,
 #myDIV3,
-#myDIV4 {
+#myDIV4,
+#myDIV5,
+#myDIV6,
+#myDIV7,
+#myDIV8,
+#myDIV9,
+#myDIV10,
+#myDIV11,
+#myDIV12,
+#myDIV13,
+#myDIV14,
+#myDIV15,
+#myDIV16,
+#myDIV17,
+#myDIV18,
+#myDIV19,
+#myDIV20,
+#myDIV21,
+#myDIV22 {
   display: block;
   -webkit-animation: slide-down 0.5s ease-out;
   -moz-animation: slide-down 0.5s ease-out;
@@ -2803,6 +2843,44 @@ hr {
 }
 
 .boton:active {
+  background-color: rgba(67, 75, 86, 0.05);
+}
+
+/* Boton Tabla */
+.botonTable {
+  background-color: #fe7bfd;
+  color: #ffffff;
+  border-radius: 3.92857em;
+
+  border: 3px solid #ffffff;
+  cursor: pointer !important;
+  display: inline-block;
+  font-weight: 600;
+  height: 3.92857em;
+  line-height: 3.6em;
+  padding: 0 3em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 0.25s;
+  width: 130px;
+}
+.botonTable span {
+  opacity: 0;
+}
+.botonTable:hover {
+  background-color: rgba(67, 75, 86, 0.05);
+  color: #656dba;
+}
+.botonTable:hover span {
+  color: #656dba;
+  transition: 0.25s;
+  opacity: 1;
+}
+
+.botonTable:active {
   background-color: rgba(67, 75, 86, 0.05);
 }
 
@@ -3642,6 +3720,10 @@ input[type="radio"]:focus + label:before {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1em;
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .video {
   display: block;
