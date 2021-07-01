@@ -2,15 +2,54 @@ var quiz = {
     user: "e-oncología",
     questions: [
       {
-        text: "¿Cuál de las siguientes afirmaciones no es cierta para un registro de cáncer poblacional?",
+        text: "¿Cuál es la respuesta correcta?",
         responses: [
-          { text: "Implica la recogida de información sobre todos los casos nuevos de cáncer que se producen en una población bien definida." },
-          { text: "Describe la carga de cáncer y determina los patrones de cáncer en diferentes poblaciones." },
-          { text: "Ayuda a mejorar la atención de los pacientes en centros oncológicos.", correct: true },
-          { text: "Ayuda en la planificación, monitorización y evaluación de programas de control del cáncer." },
+          { text: "Esta no es correcta" },
+          { text: "Esta sí es correcta", correct: true },
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
         ],
       },
 
+      {
+        text: "¿Cuál es la respuesta correcta?",
+        responses: [
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
+          { text: "Esta sí es correcta", correct: true },
+          { text: "Esta no es correcta" },
+        ],
+      },
+
+      {
+        text: "¿Cuál es la respuesta correcta?",
+        responses: [
+          { text: "Esta sí es correcta", correct: true },
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
+        ],
+      },
+
+      {
+        text: "¿Cuál es la respuesta correcta?",
+        responses: [
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
+          { text: "Esta sí es correcta", correct: true },
+          { text: "Esta no es correcta" },
+        ],
+      },
+
+      {
+        text: "¿Cuál es la respuesta correcta?",
+        responses: [
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
+          { text: "Esta no es correcta" },
+          { text: "Esta sí es correcta", correct: true },
+        ],
+      },
     ],
   },
   userResponseSkelaton = Array(quiz.questions.length).fill(null);
