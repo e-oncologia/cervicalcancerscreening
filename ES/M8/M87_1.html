@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-  <title>BCNscreening</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/flipcard.css" />
-</head>
+  <head>
+    <title>BCNscreening</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/flipcard.css" />
+    <link rel="stylesheet" href="../actividades/css/animate.css" />
+    <link rel="stylesheet" href="../actividades/css/quiz1.css" />
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+  </head>
 
 <body class="is-preload">
   <div id="page-wrapper">
@@ -160,6 +165,133 @@
                 <span class="bgazul">&nbsp;FIGURA 4&nbsp;</span> Programas de cribado del cáncer de cuello uterino en la Unión Europea: cobertura en un intervalo de edad específico. Fuente: <span class="tooltip">[11]<span class="tooltiptext">Ponti A, Anttila A, Ronco G, Senore C, Basu P, Segnan N. Cancer screening in the European Union (2017). Report on the implementation of the Council Recommendation on cancer screening (second report) [Internet]. 2017 [citado el 24 de marzo de 2021];</span></span>
               </h4>
               <img class="grafico" src="images/08_A.jpg" alt="" />
+
+            </section>
+ <!-- QUIZ 1 -->
+
+ <div class="wrapper">
+  <div class="inner">
+    <!-- Main -->
+    <section class="main">
+<!-- Section -->
+<div class="contenedor">
+  <!--questionBox-->
+  <div class="questionBox" id="appB">
+    <!-- transition -->
+    <transition
+    :duration="{ enter: 500, leave: 300 }"
+    enter-active-class="animated"
+    leave-active-class="animated"
+    mode="out-in"
+    >
+    <!--qusetioncontenedor-->
+    <div
+      class="questioncontenedor"
+      v-if="questionIndex<quizB.questions.length"
+      v-bind:key="questionIndex"
+    >
+    <header>
+      <h2 class="bgblanco">Ponte a prueba</h2>
+      <br><br>
+      <span class="icon solid fa-question major salmon"></span>
+     
+      </header>
+      <!-- questionTitle -->
+      <p class="titlecontenedor title">
+      {{ quizB.questions[questionIndex].text }}
+      </p>
+      <!-- quizOptions -->
+      <div class="optioncontenedor">
+      <div
+        class="option"
+        v-for="(response, index) in quizB.questions[questionIndex].responses"
+        @click="selectOption(index)"
+        :class="{ 'is-selected': userResponses[questionIndex] == index}"
+        :key="index"
+      >
+        {{ index | charIndex }}. {{ response.text }}
+      </div>
+      </div>
+      <!--quizFooter: navigation and progress-->
+      <footer class="questionFooter">
+      <!--pagination-->
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        <!-- back button -->
+        <a
+        class=""
+        v-on:click="prev();"
+        :disabled="questionIndex < 1"
+        >
+        </a>
+        <!-- next button -->
+        <a
+        class="button"
+        :class="(userResponses[questionIndex]==null)?'':'is-active'"
+        v-on:click="next();"
+        :disabled="questionIndex>=quizB.questions.length"
+        >
+        {{ (userResponses[questionIndex]==null)?'check':'check' }}
+        </a>
+      </nav>
+      <!--/pagination-->
+      </footer>
+      <!--/quizFooter-->
+    </div>
+    <!--/questioncontenedor-->
+
+    <!--quizCompletedResult-->
+    <div
+      v-if="questionIndex >= quizB.questions.length"
+      v-bind:key="questionIndex"
+      class="quizCompleted has-text-centered"
+    >
+      <!-- quizCompletedIcon: Achievement Icon -->
+      <span class="icon">
+        <br>
+      <i
+        class="fa"
+        :class="score()<1?'fa-times-circle salmon':'fa-check-circle'"
+      ></i>
+      </span>
+      <!--resultTitleBlock-->
+      <h2 class="title">
+      {{ score()<1?'INCORRECTO':'¡CORRECTO!'
+      }}
+      </h2>
+      <p class="subtitle"><br><br>
+        Si se convoca a una quinta parte de la población diana cada año, en cinco años se habrá convocado a todas las mujeres. Las convocadas en el primer año serán convocadas de nuevo en el sexto año si la prueba de cribado ha sido negativa, respetando el intervalo de cinco años.</p>
+      <br /><br><br>
+      <a class="button" @click="restart()"
+      >VOLVER <i class="fa fa-refresh"></i
+      ></a><br><br><br><br><br><br>
+      <!--/resultTitleBlock-->
+    </div>
+    <!--/quizCompetedResult-->
+    </transition>
+  </div>
+  <!--/questionBox-->
+</div>
+  <!--/contenedor-->
+  <!-- partial -->
+</section>
+<!--  -->
+</div class="main">
+</div>
+
+<!-- Main -->
+<section class="main">
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- IMPORTANTE -->
             <hr />
             <div class="row">
@@ -219,6 +351,13 @@
           </div>
         </div>
       </div>
+    <!-- quizz -->
+
+    <script src="../actividades/js/quiz1A.js"></script>
+    <script src="../actividades/js/quiz1.js"></script>
+    <script src="../actividades/js/quiz2.js"></script>
+    <script src="../actividades/js/quiz3.js"></script>
+    <script src="../actividades/js/quiz4.js"></script>
 
       <!-- Scripts -->
       <script src="../assets/js/jquery.min.js"></script>
