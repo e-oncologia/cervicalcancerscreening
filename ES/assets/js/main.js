@@ -366,7 +366,152 @@ function muestra1() {
 	  x.style.display = "none";
 	}
   }
+  function muestra5() {
+	var x = document.getElementById("myDIV5");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra6() {
+	var x = document.getElementById("myDIV6");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra7() {
+	var x = document.getElementById("myDIV7");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra8() {
+	var x = document.getElementById("myDIV8");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra9() {
+	var x = document.getElementById("myDIV9");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra10() {
+	var x = document.getElementById("myDIV10");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra11() {
+	var x = document.getElementById("myDIV11");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
 
+  function muestra12() {
+	var x = document.getElementById("myDIV12");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function muestra13() {
+	var x = document.getElementById("myDIV13");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra14() {
+	var x = document.getElementById("myDIV14");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra15() {
+	var x = document.getElementById("myDIV15");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra16() {
+	var x = document.getElementById("myDIV16");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra17() {
+	var x = document.getElementById("myDIV17");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra18() {
+	var x = document.getElementById("myDIV18");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra19() {
+	var x = document.getElementById("myDIV19");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra20() {
+	var x = document.getElementById("myDIV20");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra21() {
+	var x = document.getElementById("myDIV21");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+  function muestra22() {
+	var x = document.getElementById("myDIV22");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
   function muestraDYK1() {
 	var x = document.getElementById("DYK1");
 	if (x.style.display === "none") {
