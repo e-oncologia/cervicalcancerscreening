@@ -1,19 +1,19 @@
 var quizB = {
-    user: "e-oncología",
-    questions: [
-      {
-        text: "Para lograr una elevada cobertura de cribado, el programa debe llegar a toda la población diana. Dentro del intervalo de cinco años recomendado en un programa de cribado poblacional, esto significa que las invitaciones deben enviarse a:",
-        responses: [
-          { text: "Aproximadamente una quinta parte de la población diana cada año.", correct: true},
-          { text: "Aproximadamente una quinta parte de la población cribada cada año."},
-          { text: "Aproximadamente una quinta parte de la población diana durante 5 años." },
-          { text: "Aproximadamente una quinta parte de la población cribada durante 5 años." },
-        ],
-      },
+  user: "e-oncología",
+  questions: [
+    {
+      text: "Para lograr una elevada cobertura de cribado, el programa debe llegar a toda la población diana. Dentro del intervalo de cinco años recomendado en un programa de cribado poblacional con la prueba de VPH, esto significa que las invitaciones deben enviarse a:",
+      responses: [
+        { text: "Aproximadamente una quinta parte de la población diana cada año.", correct: true },
+        { text: "Aproximadamente una quinta parte de la población cribada cada año." },
+        { text: "Aproximadamente una quinta parte de la población diana durante 5 años." },
+        { text: "Aproximadamente una quinta parte de la población cribada durante 5 años." },
+      ],
+    },
 
-     
-    ],
-  },
+
+  ],
+},
   userResponseSkelaton = Array(quizB.questions.length).fill(null);
 
 var appB = new Vue({
@@ -53,7 +53,7 @@ var appB = new Vue({
       for (let i = 0; i < this.userResponses.length; i++) {
         if (
           typeof this.quizB.questions[i].responses[this.userResponses[i]] !==
-            "undefined" &&
+          "undefined" &&
           this.quizB.questions[i].responses[this.userResponses[i]].correct
         ) {
           score = score + 1;
